@@ -1,11 +1,9 @@
 ---
- study list
+<h1>     Study List
+<h3><cite> 标签: 日常 记录 </cite>    
+--- 
 
-tags: list
-categories:
-photos:
----
-<cite>列个知识清单，方便记录准备学习的、未解决的嵌入式领域的知识点，已经解决的，会被进行标记</cite> 
+<cite>列个知识清单，方便记录准备学习的、未解决的嵌入式领域的知识点，已经解决的，会被进行标记</cite>    <!--more-->
 
 
 <h1>嵌入式硬件
