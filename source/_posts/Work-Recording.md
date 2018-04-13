@@ -32,7 +32,7 @@
 <h2>    Address: 江苏英索纳杭州研发中心
 <h2>    Plan:   
     
-<div style="color:black;background-color:white";><p style="font-size:15px"><cite>感冒了？肚子也不舒服。。。。。</cite></div>
+<p style="font-size:15px"><cite>感冒了？肚子也不舒服。。。。。</cite></div>
 <h3>
 <ul>    
 <li>完成毕业论文中第三章的“主机模块”与“ZAP模块”</li>  
@@ -48,7 +48,39 @@
 <h3>   
 <ul><li>毕业论文写完了主机模块</li>
 </ul>   
-完成度：20%（一天都干什么了我靠！）
+完成度：20%（一天都干什么了我靠！） 
+
+<h2>    Date: 2018-04-13    
+<h2>    Address: 江苏英索纳杭州研发中心    
+<h2>    Plan:   
+
+<p style="font-size:15px"><cite>今天是周五哎。。。。。</cite>  
+  
+<html>
+<body>
+<audio controls="controls" loop preload>     
+    <source src="http://m10.music.126.net/20180413121601/72884f4d5753ecce9fddf0a17eaef98d/ymusic/df51/c24c/15a0/99c6b90ba2d24e5ba27ddbc45cf31dca.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>     
+</body>
+<html>  
+
+<ul>
+<li>完成毕业设计ZAP模块</li>
+<li>完成微信公众号的推送</li>
+<li>完成腾讯云的安全组配置并进行成功登陆</li>
+<li>“哈佛结构”学习</li>
+<li>hexo官方文档学习</li>
+</ul>   
+
+<h2>   Finished：   
+<ul>
+<li>毕业论文ZAP模块基本完成，还剩EM357软件一小部分，需要其他人员的帮助</li>  
+<li>做了云服务器的基本了解，成功登陆云服务器，下一步可以进行高级配置与学习了</li>   
+</ul>   
+
+完成度：50%     
+问题总结：早上的时间全花在了如何往HTML中添加和修改audio空间，跟今天的任务不相干。
 
 
 
