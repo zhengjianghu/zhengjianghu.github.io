@@ -55,17 +55,11 @@
 <h2>    Plan:   
 
 <p style="font-size:15px"><cite>今天是周五哎。。。。。</cite>  
-  
-<html>
-<body>
-<audio controls="controls" loop preload>     
-    <source src="http://m10.music.126.net/20180413121601/72884f4d5753ecce9fddf0a17eaef98d/ymusic/df51/c24c/15a0/99c6b90ba2d24e5ba27ddbc45cf31dca.mp3" type="audio/mpeg">
-Your browser does not support the audio element.
-</audio>     
-</body>
-<html>  
 
-<ul>
+<audio controls="controls" >     
+<source src="http://url.527578.com/kuwo.php/1131748.mp3" type="audio/mpeg">
+Your browser does not support the audio element.    
+</audio>    <ul>
 <li>完成毕业设计ZAP模块</li>
 <li>完成微信公众号的推送</li>
 <li>完成腾讯云的安全组配置并进行成功登陆</li>
@@ -80,7 +74,30 @@ Your browser does not support the audio element.
 </ul>   
 
 完成度：50%     
-问题总结：早上的时间全花在了如何往HTML中添加和修改audio空间，跟今天的任务不相干。
+问题总结：早上的时间全花在了如何往HTML中添加和修改audio空间，跟今天的任务不相干。   
+
+<h2>    Date:   2018.04.14  
+<h2>    Address:    德信北海公寓
+<h2>    Plan：   
+      
+<audio controls="controls" >    
+<source src="http://url.527578.com/kuwo.php/26445261.mp3" type="audio/mpeg">
+Your browser does not suppurt the audio element.
+</audio>    
+
+<ul>    
+<li>完成中期检查表和中期汇报</li>   
+<li>完成论文剩余传感器能完成部分，不能完成的等回到公司再说</li>    
+<li>云服务器完成磁盘分区</li> 
+<li>hexo官方文档阅读，并完成博客界面部分更改</li> 
+<li>哈佛结构与冯诺依曼结构学习</li>
+</ul>   
+
+<h2>    Finished:   
+<ul>
+<li>完成了中期检查表与中期汇报</li>  
+<li>学习了Linux的文件系统</li>
+</ul>
 
 
 
