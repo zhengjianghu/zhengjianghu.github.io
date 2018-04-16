@@ -102,16 +102,39 @@ Your browser does not suppurt the audio element.
 <h2>    Date:   2018.04.15  
 <h2>    Address:    德信北海公寓  
 <h2>    Plan:   
-<audio controls="controls" loop preload>    
-<source src="http://up.mcyt.net/?down/41851.mp3" type=audio/mpeg> 
-
+<audio controls="controls" >    
+<source src="http://up.mcyt.net/?down/41851.mp3" type="audio/mpeg"> 
+Your browser does not suppurt the audio element.
 </audio>    
 
 <ul>    
 <li>完成哈佛结构学习</li>   
 <li>学习Linux的文件系统并做博客构建</li> 
 <li>回学校，完成作业，拍照</li>
-</ul>
+</ul>   
 
 
+<h2>    Date:2018.04.16
+<h2>    Address:江苏英索纳杭州研发中心
+<h2>    Plan:   
+<audio controls="controls" >
+<source src="http://up.mcyt.net/?down/31968.mp3" type="audio/mpeg"> 
+Your browser does not suppurt the audio element.
+</audio>    
 
+<ul>
+<li>完成毕设AQS模块</li>  
+<li>硬件学习之“单片机结构与原理”</li>    
+</ul>   
+
+<h2>    Finished:
+<ul>    
+<li>调整并修改了毕设目录，完成了部分内容</li>
+</ul>   
+
+<cite>   
+完成度：40% 
+
+备注：早上上课，公司上班已经三点多，时间不足，并且对论文目录进行大修改 </cite> 
+
+<img src="http://img.zcool.cn/community/0139935982b646a8012156030cf8a7.gif" alt="瘫" width="150" height="150" />
