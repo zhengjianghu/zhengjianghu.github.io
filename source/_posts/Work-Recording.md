@@ -135,6 +135,32 @@ Your browser does not suppurt the audio element.
 <cite>   
 完成度：40% 
 
-备注：早上上课，公司上班已经三点多，时间不足，并且对论文目录进行大修改 </cite> 
+备注：早上上课，公司上班已经三点多，时间不足，并且对论文目录进行大修改     
+</cite> 
 
-<img src="http://img.zcool.cn/community/0139935982b646a8012156030cf8a7.gif" alt="瘫" width="150" height="150" />
+<img src="http://img.zcool.cn/community/0139935982b646a8012156030cf8a7.gif" alt="瘫" width="150" height="150" /> 
+
+
+<h2>    Date:2018.04.17
+<h2>    Address:江苏英索纳杭州研发中心
+<h2>    Plan:   
+<body>
+<audio controls="controls" loop="loop" reload="preload">
+<source src="http://other.web.ri01.sycdn.kuwo.cn/resource/n3/43/91/3525126803.mp3" type="mpeg"></audio> 
+</body>     
+
+<ul><li>可能要焊机三块ZAP2的板子</li> 
+<li>完成毕设的门磁部分</li>  
+<li>完成单片机结构学习并整理成博客 </li>   
+<li>完成《TCP/IP入门经典》的第一章阅读和学习心得并进行博客记录（如果来得及的话）</li>  
+</ul>   
+
+
+<h2>    Finished：
+<ul>    
+<li>什么都没做</li>
+</ul>   
+
+完成度：10%      
+备注：全天都在手焊板子，五块，非常耗费时间，还没焊完  
+<img src="http://wanzao2.b0.upaiyun.com/system/pictures/8450323/original/20140512042951.png" akt="腰快废了" width="250" heigth="250">
