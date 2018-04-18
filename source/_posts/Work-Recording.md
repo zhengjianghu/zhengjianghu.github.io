@@ -1,7 +1,11 @@
 ---
-<h1>    日常学习安排记录
-<h3><cite> 标签: 日常 记录 </cite>    
---- 
+title: 工作任务安排与完成情况  
+tags: 
+   - 任务
+   - 学习
+   - 记录 
+categories: 学习记录        
+---
 
 <h3>一个简单的日常学习任务与完成情况记录单，用来记录自己的成长历程与学习点滴，置顶且不定时更新(￣▽￣)／ 
 <!--more-->
@@ -145,8 +149,8 @@ Your browser does not suppurt the audio element.
 <h2>    Address:江苏英索纳杭州研发中心
 <h2>    Plan:   
 <body>
-<audio controls="controls" loop="loop" reload="preload">
-<source src="http://other.web.ri01.sycdn.kuwo.cn/resource/n3/43/91/3525126803.mp3" type="mpeg"></audio> 
+<audio controls="controls" loop="loop" preload="preload">
+<source src="http://other.web.ri01.sycdn.kuwo.cn/resource/n3/43/91/3525126803.mp3" type="audio/mpeg"></audio> 
 </body>     
 
 <ul><li>可能要焊机三块ZAP2的板子</li> 
@@ -163,4 +167,27 @@ Your browser does not suppurt the audio element.
 
 完成度：10%      
 备注：全天都在手焊板子，五块，非常耗费时间，还没焊完  
-<img src="http://wanzao2.b0.upaiyun.com/system/pictures/8450323/original/20140512042951.png" akt="腰快废了" width="250" heigth="250">
+<img src="http://wanzao2.b0.upaiyun.com/system/pictures/8450323/original/20140512042951.png" akt="腰快废了" width="250" heigth="250" />   
+
+    
+<h2>    Date:2018.04.18</h2> 
+<h2>     Address:江苏英索纳杭州研发中心</h2>
+<h2>    Plan: </h2>      
+
+<audio controls="controls" loop="loop" preload="preload">
+<source src="http://up.mcyt.net/?down/45211.mp3" type="audio/mpeg">
+</audio>
+
+<ul>
+<li>板子焊接完最好能调试通过</li>   
+<li>继续昨天的博客整理</li>
+</ul>   
+
+<h2>    Finished:</h2>   
+<ul>
+<li>基本焊接完板子</li>    
+<li>“单片机结构”博客做完一部分</li>
+</ul>   
+完成度：70% 
+备注：板子早上焊接完，下午六点开始整理博客，基本实现安排，但是博客太过庞大，一时半会不能整理完，只能以后慢慢更新    
+<img src="http://p3.music.126.net/dc1gobBJoZQM-UVze0wIfw==/109951163027838729.jpg?param=640y300" alt="洛天依" width="250" heigth="250">
