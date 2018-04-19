@@ -17,7 +17,7 @@
 <meta property="og:locale" content="default">
 <meta property="og:image" content="http://www.diangon.com/image/portal/201412/07/080230rtrmxrltr3rgmerz.jpg">
 <meta property="og:image" content="http://tse2.mm.bing.net/th?id=OIP.fdAiOxuTSZNGwHuvA3rD8gHaFm&w=300&h=300&p=0&o=5&pid=1.7">
-<meta property="og:updated_time" content="2018-04-19T03:51:54.287Z">
+<meta property="og:updated_time" content="2018-04-19T06:17:13.655Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="单片机内部结构与原理">
 <meta name="twitter:description" content="单片机基本知识汇总与分析">
@@ -101,26 +101,26 @@
         <p><cite>单片机基本知识汇总与分析</cite><br><a id="more"></a> </p>
  <h2>单片机的内部结构</h2>  
 
+<p><div style="text-indent:2em">        </div></p>
+<p><br>单片机是计算机的浓缩版，一般不带操作系统，只具备微控制器的作用。典型的如ST的51单片机、AVR单片机、MSP430单片机。这些单片机基本结构相同，其工作流程也大致相当，现解析如下：<br>以MCS-51系列单片机为例，改系列的单片机有8051，8031,8751,80C51,80C31等型号。他们的内部结构基本相同，只不过存储器大小可能会有一点差别，进行使得运行速度等不同。</p>
 
-<p></p><p><font size="4"><br>单片机是计算机的浓缩版，一般不带操作系统，只具备微控制器的作用。典型的如ST的51单片机、AVR单片机、MSP430单片机。这些单片机基本结构相同，其工作流程也大致相当，现解析如下： </font></p>
-<p>以MCS-51系列单片机为例，改系列的单片机有8051，8031,8751,80C51,80C31等型号。他们的内部结构基本相同，只不过存储器大小可能会有一点差别，进行使得运行速度等不同。<br></p><p></p>
-<p></p><h3>单片机的内部组成<h3>    <p></p>
-<p></p><p><font size="4"><br>单片机一般由CPU（Central Process Unity）、ROM（程序存储器）、RAM（数据存储器）、定时/计数器、终端、并行I/O口、时钟等模块组成。可概括如下：  </font></p>
-<p><ul></ul></p>
-<p><li>一个8位的CPU</li>   </p>
-<p><li>4K字节的ROM程序存储器<font size="4" color="orange">（为什么是4K?？）</font></li></p>
-<p><li>128字节的RAM数据存储器<font size="4" color="orange">(为什么是128字节？)</font></li> </p>
-<p><li>两个16位的定时器/计数器</li>  </p>
-<p><li>可对外部64K程序存储器和数据存储器进行寻址的控制电路<font color="orange">(为什么是64K？)</font></li>    </p>
-<p><li>4个8位的并行扩展I/O口</li>  </p>
-<p><li>一个可编程的全双工串行口（TXD/RXD）</li>  </p>
-<p><li>五个中断源，两个优先级嵌套总段结构 <font color="orange">(哪五个中断源？)</font></li><br><br> </p><br> 单片机的内部结构图示如下：<br> <img src="http://www.diangon.com/image/portal/201412/07/080230rtrmxrltr3rgmerz.jpg" alt="MCS-51" width="300" heigth="300">     <p></p>
-<p> 下面对每一部分进行较为详细的解说：<br> <b><font size="5">CPU</font></b><br> CPU（中央处理器）是一块超大规模的集成电路，是一台计算机的运算核心和控制核心，其主要功能是解释指令和控制进行运算，主要包括逻辑单元（指令寄存器、指令译码器、控制单元、寄存器、ALU、预取单元、总线单元、数据缓存）、存储单元、控制单元三大部分组成。CPU、内部存储单元（Memory）、输入输出设备（I/O）合称为计算机的三大核心部件。<br> MCS-51的CPU是8位的处理器。它可以处理半字节（4位）、8字节的运算，进行加、减、乘、除、取反、异或、与或、进制转换等操作。<br> <cite>关于CPU的位数：单片机最低是8位，其发展时间长，价格低廉，应用广泛。后来又依次出现了16位、32位的单片机。这些单片机数据的处理能理强，运行速度更快。对于8位的单片机，当面对16位，32位的数据时，就要分多次来操作，而32位的CPU可以一次操作完毕。主要是由于CPU内部的<a href="https://baike.baidu.com/item/%E7%AE%97%E6%9C%AF%E9%80%BB%E8%BE%91%E5%8D%95%E5%85%83/8954657?fr=aladdin&fromid=62687&fromtitle=ALU" target="_blank" rel="noopener">ALU(Arithmetic and Logic Unit)</a>,寄存器是几位宽度，因为它们才是运行的核心单元。<font color="gray" size="3">单片机具体指令执行流程后面进行讲解</font></cite><br> <img src="http://tse2.mm.bing.net/th?id=OIP.fdAiOxuTSZNGwHuvA3rD8gHaFm&w=300&h=300&p=0&o=5&pid=1.7" alt="单片机内部结构图" width="300" heigth="300"><br><b><font soze="5">RAM &amp; ROM</font></b><br>作为单片机中的三大核心组成之一，ROM&amp;RAM扮演着极其中的角色，存储数据、程序，以及运算过程中产生的变量，存放程序执行的结果等等。<br>ROM(Read Only Memory):只读存储器，只能通过特定的方式写入数据，断电之后不会消失，用来存放程序。</p>
-</h3></h3>
+<p></p><h3>单片机的内部组成</h3>    <p></p>
+<p><font size="4"><br>单片机一般由CPU（Central Process Unity）、ROM（程序存储器）、RAM（数据存储器）、定时/计数器、终端、并行I/O口、时钟等模块组成。可概括如下：<br><ul><br><li>一个8位的CPU</li><br><li>4K字节的ROM程序存储器<font size="4" color="orange">（为什么是4K?？）</font></li><br><li>128字节的RAM数据存储器<font size="4" color="orange">(为什么是128字节？)</font></li><br><li>两个16位的定时器/计数器</li><br><li>可对外部64K程序存储器和数据存储器进行寻址的控制电路<font color="orange">(为什么是64K？)</font></li><br><li>4个8位的并行扩展I/O口</li><br><li>一个可编程的全双工串行口（TXD/RXD）</li><br><li>五个中断源，两个优先级嵌套总段结构 <font color="orange">(哪五个中断源？)</font></li><br></ul><br> </font></p> 
+
+<p> 单片机的内部结构图示如下：<br> <img src="http://www.diangon.com/image/portal/201412/07/080230rtrmxrltr3rgmerz.jpg" alt="MCS-51" width="500" heigth="500">     </p>
+<p> 下面对每一部分进行较为详细的解说：<br> <b><font size="5">CPU</font></b><br> </p><p><br> CPU（中央处理器）是一块超大规模的集成电路，是一台计算机的运算核心和控制核心，其主要功能是解释指令和控制进行运算，主要包括逻辑单元（指令寄存器、指令译码器、控制单元、寄存器、ALU、预取单元、总线单元、数据缓存）、存储单元、控制单元三大部分组成。CPU、内部存储单元（Memory）、输入输出设备（I/O）合称为计算机的三大核心部件。<br> MCS-51的CPU是8位的处理器。它可以处理半字节（4位）、8字节的运算，进行加、减、乘、除、取反、异或、与或、进制转换等操作。<br> <code>关于CPU的位数：单片机最低是8位，其发展时间长，价格低廉，应用广泛。后来又依次出现了16位、32位的单片机。这些单片机数据的处理能理强，运行速度更快。对于8位的单片机，当面对16位，32位的数据时，就要分多次来操作，而32位的CPU可以一次操作完毕。CPU内部的<a href="https://baike.baidu.com/item/%E7%AE%97%E6%9C%AF%E9%80%BB%E8%BE%91%E5%8D%95%E5%85%83/8954657?fr=aladdin&fromid=62687&fromtitle=ALU" target="_blank" rel="noopener">ALU(Arithmetic and Logic Unit)</a>,寄存器是几位宽度，因为它们才是运行的核心单元。<font color="gray" size="3">单片机具体指令执行流程后面进行讲解</font></code><br> <img src="http://tse2.mm.bing.net/th?id=OIP.fdAiOxuTSZNGwHuvA3rD8gHaFm&w=300&h=300&p=0&o=5&pid=1.7" alt="单片机内部结构图" width="500" heigth="500"></p><p></p>
+<p><b><font soze="5">RAM &amp; ROM</font></b>  </p>
+<p><br>作为单片机中的三大核心组成之一，ROM&amp;RAM扮演着极其中的角色，存储数据、程序，以及运算过程中产生的变量，存放程序执行的结果等等。<br>ROM(Read Only Memory):只读存储器，只能通过特定的方式写入数据，断电之后不会消失，用来存放程序。<br><br></p>
+
+
+
+
+
+
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://jianghublog.com/2018/04/18/单片机内部结构与原理/" data-id="cjg5zyb7h0002vkw9bl0g40la" class="article-share-link">Share</a>
+      <a data-url="http://jianghublog.com/2018/04/18/单片机内部结构与原理/" data-id="cjg65nou0000cu8w9dad8te6h" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/单片机/">单片机</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/电路/">电路</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/硬件/">硬件</a></li></ul>
