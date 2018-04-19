@@ -7,23 +7,25 @@ tags:
 categories: 学习记录        
 ---
 
-<h3>一个简单的日常学习任务与完成情况记录单，用来记录自己的成长历程与学习点滴，置顶且不定时更新(￣▽￣)／ 
+<h3>一个简单的日常学习任务与完成情况记录单，用来记录自己的成长历程与学习点滴，置顶且不定时更新(￣▽￣)／</h3> 
 <!--more-->
 
 
-<h2>  Date: 2018-04-11
-<h2>  Address: 江苏英索纳杭州研发中心
-<h2>  Plan： 
+<h2>  Date: 2018-04-11  </h2>
+<h2>  Address: 江苏英索纳杭州研发中心  <>/h2
+<h2>  Plan： </h2> 
 
-<h3> 
-<ul><li>结束第一篇hexo博客“日常学习安排记录”的初版</li>
+
+<ul>    
+<li>结束第一篇hexo博客“日常学习安排记录”的初版</li>
 <li>完成毕业论文的前言与废话连篇的部分 (▼ヘ▼#)</li>
 <li>学会如何在博客里插入本地图片与在线图片</li>
 <li>嵌入式硬件日常学习之： 哈佛结构与冯•诺依曼结构</li>
-</ul>
-</h2>
+</ul>   
 
-<h3>    Finished:   
+
+
+<h2>    Finished:   </h2>  
 <ul>
 <li>“日常学习安排记录”博客初版成功发布</li> 
 <li>论文废话连篇部分完成，可以开始写正文了</li>
@@ -32,12 +34,12 @@ categories: 学习记录
 
 
 
-<h2>    Date: 2018-04-12
-<h2>    Address: 江苏英索纳杭州研发中心
-<h2>    Plan:   
+<h2>    Date: 2018-04-12    </h2>
+<h2>    Address: 江苏英索纳杭州研发中心    </h2>
+<h2>    Plan:   </h2>
     
 <p style="font-size:15px"><cite>感冒了？肚子也不舒服。。。。。</cite></div>
-<h3>
+
 <ul>    
 <li>完成毕业论文中第三章的“主机模块”与“ZAP模块”</li>  
 <li>完成study-list中“哈佛结构与冯•诺依曼结构”知识点</li> 
@@ -48,15 +50,14 @@ categories: 学习记录
 
 
 
-<h2>   Finished: 
-<h3>   
+<h2>   Finished: </h2>
 <ul><li>毕业论文写完了主机模块</li>
 </ul>   
 完成度：20%（一天都干什么了我靠！） 
 
-<h2>    Date: 2018-04-13    
-<h2>    Address: 江苏英索纳杭州研发中心    
-<h2>    Plan:   
+<h2>    Date: 2018-04-13    </h2>    
+<h2>    Address: 江苏英索纳杭州研发中心    </h2>
+<h2>    Plan:   </h2>
 
 <p style="font-size:15px"><cite>今天是周五哎。。。。。</cite>  
 
@@ -71,7 +72,7 @@ Your browser does not support the audio element.
 <li>hexo官方文档学习</li>
 </ul>   
 
-<h2>   Finished：   
+<h2>   Finished：   </h2>
 <ul>
 <li>毕业论文ZAP模块基本完成，还剩EM357软件一小部分，需要其他人员的帮助</li>  
 <li>做了云服务器的基本了解，成功登陆云服务器，下一步可以进行高级配置与学习了</li>   
@@ -80,9 +81,9 @@ Your browser does not support the audio element.
 完成度：50%     
 问题总结：早上的时间全花在了如何往HTML中添加和修改audio空间，跟今天的任务不相干。   
 
-<h2>    Date:   2018.04.14  
-<h2>    Address:    德信北海公寓
-<h2>    Plan：   
+<h2>    Date:   2018.04.14  </h2>
+<h2>    Address:    德信北海公寓  </h2>
+<h2>    Plan：   </h2>
       
 <audio controls="controls" >    
 <source src="http://url.527578.com/kuwo.php/26445261.mp3" type="audio/mpeg">
@@ -97,15 +98,15 @@ Your browser does not suppurt the audio element.
 <li>哈佛结构与冯诺依曼结构学习</li>
 </ul>   
 
-<h2>    Finished:   
+<h2>    Finished:   </h2>
 <ul>
 <li>完成了中期检查表与中期汇报</li>  
 <li>学习了Linux的文件系统</li>
 </ul>
 
-<h2>    Date:   2018.04.15  
-<h2>    Address:    德信北海公寓  
-<h2>    Plan:   
+<h2>    Date:   2018.04.15  </h2>  
+<h2>    Address:    德信北海公寓  </h2>
+<h2>    Plan:   </h2>
 <audio controls="controls" >    
 <source src="http://up.mcyt.net/?down/41851.mp3" type="audio/mpeg"> 
 Your browser does not suppurt the audio element.
@@ -118,9 +119,9 @@ Your browser does not suppurt the audio element.
 </ul>   
 
 
-<h2>    Date:2018.04.16
-<h2>    Address:江苏英索纳杭州研发中心
-<h2>    Plan:   
+<h2>    Date:2018.04.16 </h2>
+<h2>    Address:江苏英索纳杭州研发中心 </h2>
+<h2>    Plan:   </h2>
 <audio controls="controls" >
 <source src="http://up.mcyt.net/?down/31968.mp3" type="audio/mpeg"> 
 Your browser does not suppurt the audio element.
@@ -131,7 +132,7 @@ Your browser does not suppurt the audio element.
 <li>硬件学习之“单片机结构与原理”</li>    
 </ul>   
 
-<h2>    Finished:
+<h2>    Finished:   </h2>
 <ul>    
 <li>调整并修改了毕设目录，完成了部分内容</li>
 </ul>   
@@ -145,9 +146,9 @@ Your browser does not suppurt the audio element.
 <img src="http://img.zcool.cn/community/0139935982b646a8012156030cf8a7.gif" alt="瘫" width="150" height="150" /> 
 
 
-<h2>    Date:2018.04.17
-<h2>    Address:江苏英索纳杭州研发中心
-<h2>    Plan:   
+<h2>    Date:2018.04.17<h2>
+<h2>    Address:江苏英索纳杭州研发中心 </h2>
+<h2>    Plan:   </h2>
 <body>
 <audio controls="controls" loop="loop" preload="preload">
 <source src="http://other.web.ri01.sycdn.kuwo.cn/resource/n3/43/91/3525126803.mp3" type="audio/mpeg"></audio> 
@@ -160,7 +161,7 @@ Your browser does not suppurt the audio element.
 </ul>   
 
 
-<h2>    Finished：
+<h2>    Finished：</h2>
 <ul>    
 <li>什么都没做</li>
 </ul>   
@@ -190,4 +191,34 @@ Your browser does not suppurt the audio element.
 </ul>   
 完成度：70% 
 备注：板子早上焊接完，下午六点开始整理博客，基本实现安排，但是博客太过庞大，一时半会不能整理完，只能以后慢慢更新    
-<img src="http://p3.music.126.net/dc1gobBJoZQM-UVze0wIfw==/109951163027838729.jpg?param=640y300" alt="洛天依" width="250" heigth="250">
+<img src="http://p3.music.126.net/dc1gobBJoZQM-UVze0wIfw==/109951163027838729.jpg?param=640y300" alt="洛天依" width="250" heigth="250" />    
+
+
+
+<h2>    Date:2018.04.19</h2> 
+<h2>    Address:江苏英索纳杭州研发中心</h2> 
+<h2>    Plan:</h2>  
+
+<audio controls="controls" loop="loop" preload="preload">   
+<source src="http://up.mcyt.net/?down/40586.mp3" type="audio/mpeg"> 
+</audio>    
+
+<ul>
+<li>对昨晚的博客进行页面整理与修改</li>    
+<li>整理板子的焊接问题</li>  
+<li>论文软件部分进行学习并尽量整理出一点东西来</li>  
+<li>ZAP的LU驱动进行编写</li>   
+<li>学习C语言与《TCP/IP详解》</li>
+</ul>   
+
+<h2>    Finished:</h2>  
+<ul>    
+<li>完成了博客界面修改，但是还有一点遗留，暂且不知如何解决</li>    
+<li>板子的焊接问题整理完毕</li>    
+<li>论文进行了修改和整理</li> 
+<li>学习了C语言和TCP/IP</li>
+</ul>       
+完成度：80% 
+备注：中间有一段时间被浪费了，在看微博！    
+
+<img src="http://pic1.win4000.com/wallpaper/c/55481ddb63abd.jpg" alt="落樱" width="250" heigth="250" />
