@@ -221,4 +221,28 @@ Your browser does not suppurt the audio element.
 完成度：80% 
 备注：中间有一段时间被浪费了，在看微博！    
 
-<img src="http://pic1.win4000.com/wallpaper/c/55481ddb63abd.jpg" alt="落樱" width="250" heigth="250" />
+<img src="http://pic1.win4000.com/wallpaper/c/55481ddb63abd.jpg" alt="落樱" width="250" heigth="250" />       
+
+
+<h2>    Date: 2018.04.20</h2>   
+<h2>    Address: 江苏英索纳杭州研发中心</h2>   
+<h2>    Plan:</h2>
+<audio controls="conntrols" loop="loop" preload="preload">  
+<source src="http://up.mcyt.net/?down/41661.mp3" type="audio/mpeg">
+</audio>    
+<ul>    
+<li>完成HTML和CSS的书写格式学习，修改hexo博客界面主题</li>  
+<li>论文完成软件的学习，并确定出测试方案</li> 
+<li>硬件学习：“单片机的结构与原理”（可以先不写博客，先将大概的学习笔记记录下来，完了找个时间专门写博客）</li>
+</ul>
+
+
+<h2>    Finished:</h2>
+<ul><li>完成了HTML与CSS的基本知识学习，扩充了vscode</li>   
+<li>学习了硬件知识的“ROM/RAM”模块记了笔记，等待整理成博客</li>    
+</ul>   
+完成度：60% 
+
+备注：花在vscode上的时间有点多，不过值得 
+
+<img src="http://i2.hdslb.com/bfs/archive/0c1a6b2653629df5a06606e650f064faed646d3e.jpg" alt="喵帕斯" width="250" heigth="250">
