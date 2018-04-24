@@ -1,10 +1,10 @@
 ---
-title: 工作任务安排与完成情况  
-tags: 
+title: 工作任务安排与完成情况
+tags:
    - 任务
    - 学习
-   - 记录 
-categories: 学习记录        
+   - 记录
+categories: 学习记录
 ---
 
 <h3>一个简单的日常学习任务与完成情况记录单，用来记录自己的成长历程与学习点滴，置顶且不定时更新(￣▽￣)／</h3>
@@ -48,7 +48,7 @@ categories: 学习记录
     <h2>    Address: 江苏英索纳杭州研发中心    </h2>
     <h2>    Plan:   </h2>
     <p style="font-size:15px">
-        <cite>今天是周五哎。。。。。</cite> 
+        <cite>今天是周五哎。。。。。</cite>
 
 <audio controls="controls">
             <source src="http://url.527578.com/kuwo.php/1131748.mp3" type="audio/mpeg"> Your browser does not support the audio element.
@@ -109,11 +109,9 @@ categories: 学习记录
         <ul>
             <li>调整并修改了毕设目录，完成了部分内容</li>
         </ul>
-        
-完成度：40% 备注：早上上课，公司上班已经三点多，时间不足，并且对论文目录进行大修改
-        
 
-<img src="http://img.zcool.cn/community/0139935982b646a8012156030cf8a7.gif" alt="瘫" width="150" height="150">
+完成度：40% 备注：早上上课，公司上班已经三点多，时间不足，并且对论文目录进行大修改
+<img src="http://img.zcool.cn/community/0139935982b646a8012156030cf8a7.gif" alt="瘫" width="700" height="700">
 
 
 
@@ -126,7 +124,7 @@ categories: 学习记录
 <audio controls="controls" loop="loop" preload="preload">
                 <source src="http://other.web.ri01.sycdn.kuwo.cn/resource/n3/43/91/3525126803.mp3" type="audio/mpeg">
 </audio>
-       
+
 <ul>
  <li>可能要焊机三块ZAP2的板子</li>
             <li>完成毕设的门磁部分</li>
@@ -138,7 +136,8 @@ categories: 学习记录
             <li>什么都没做</li>
         </ul>
         完成度：10% 备注：全天都在手焊板子，五块，非常耗费时间，还没焊完
-        <img src="http://wanzao2.b0.upaiyun.com/system/pictures/8450323/original/20140512042951.png" akt="腰快废了" width="250" heigth="250" />
+
+        <img src="http://wanzao2.b0.upaiyun.com/system/pictures/8450323/original/20140512042951.png" akt="腰快废了" width="700" heigth="700" />
         <h2>    Date:2018.04.18</h2>
         <h2>     Address:江苏英索纳杭州研发中心</h2>
         <h2>    Plan: </h2>
@@ -155,7 +154,8 @@ categories: 学习记录
             <li>“单片机结构”博客做完一部分</li>
         </ul>
         完成度：70% 备注：板子早上焊接完，下午六点开始整理博客，基本实现安排，但是博客太过庞大，一时半会不能整理完，只能以后慢慢更新
-        <img src="http://p3.music.126.net/dc1gobBJoZQM-UVze0wIfw==/109951163027838729.jpg?param=640y300" alt="洛天依" width="250" heigth="250" />
+
+        <img src="http://p3.music.126.net/dc1gobBJoZQM-UVze0wIfw==/109951163027838729.jpg?param=640y300" alt="洛天依" width="700" heigth="700" />
         <h2>    Date:2018.04.19</h2>
         <h2>    Address:江苏英索纳杭州研发中心</h2>
         <h2>    Plan:</h2>
@@ -177,7 +177,8 @@ categories: 学习记录
             <li>学习了C语言和TCP/IP</li>
         </ul>
         完成度：80% 备注：中间有一段时间被浪费了，在看微博！
-        <img src="http://pic1.win4000.com/wallpaper/c/55481ddb63abd.jpg" alt="落樱" width="250" heigth="250" />
+
+        <img src="http://pic1.win4000.com/wallpaper/c/55481ddb63abd.jpg" alt="落樱" width="700" heigth="700" />
         <h2>    Date: 2018.04.20</h2>
         <h2>    Address: 江苏英索纳杭州研发中心</h2>
         <h2>    Plan:</h2>
@@ -194,21 +195,16 @@ categories: 学习记录
             <li>完成了HTML与CSS的基本知识学习，扩充了vscode</li>
             <li>学习了硬件知识的“ROM/RAM”模块记了笔记，等待整理成博客</li>
         </ul>
-        完成度：60% 备注：花在vscode上的时间有点多，不过值得    
-        <img src="http://i2.hdslb.com/bfs/archive/0c1a6b2653629df5a06606e650f064faed646d3e.jpg" alt="喵帕斯" width="250" heigth="250"/> 
+        完成度：60% 备注：花在vscode上的时间有点多，不过值得
+        <img src="http://i2.hdslb.com/bfs/archive/0c1a6b2653629df5a06606e650f064faed646d3e.jpg" alt="喵帕斯" width="700" heigth="700"> <br>
 
-
-
-
-
-
-<cite>往后内容可分为五部分：个人兴趣、硬件日常学习、软件日常学习、硬件博客整理、软件博客整理 
-        说明： 个人兴趣：跟工作无关，一般是软件语言类，比如前端、后端、服务器、日常诸如此类。 
-        硬件日常学习：硬件学术单词、技能学习 
-        软件日常学习：一般是众多的技术文档需要每天坚持阅读 
-        硬件博客整理：对硬件中的某一个点进行专门研究并做出学习笔记到博客上 
-        软件博客整理：对嵌入式软件和纯软件中的摸一个点进行集中学习，并做出学习笔记到博客上 
-        关于博客：可分为搜集资料准备阶段、整理书写阶段、后期更新修改阶段。并不要求一次性就直接写博客，应该先慢慢收集资料，组织思路，准备好了再开动。 
+        <cite>往后内容可分为五部分：个人兴趣、硬件日常学习、软件日常学习、硬件博客整理、软件博客整理
+        说明： 个人兴趣：跟工作无关，一般是软件语言类，比如前端、后端、服务器、日常诸如此类。
+        硬件日常学习：硬件学术单词、技能学习
+        软件日常学习：一般是众多的技术文档需要每天坚持阅读
+        硬件博客整理：对硬件中的某一个点进行专门研究并做出学习笔记到博客上
+        软件博客整理：对嵌入式软件和纯软件中的摸一个点进行集中学习，并做出学习笔记到博客上
+        关于博客：可分为搜集资料准备阶段、整理书写阶段、后期更新修改阶段。并不要求一次性就直接写博客，应该先慢慢收集资料，组织思路，准备好了再开动。
         关于日常学习：日常学习，某一块如有必要写博客，可先记录在study-list中，日后专门拿出来学习
         </cite>
         <h2>    Date:2018.04.21</h2>
@@ -222,14 +218,36 @@ categories: 学习记录
     <li>个人兴趣：hexo的文档阅读完；CSS和HTML学习一部分</li>
     <li>硬件博客：“单片机结构”（准备）</li>
     <li>软件日常学习：软件TCP和C语言（专门开辟一个TCP和C的专栏，存放学习笔记，不定时更新）</li>
-    </ul>   
+    </ul>
 
 <h2>    Finished：</h2>
     <ul>
-    <li>完成了study-list的补充</li> 
-    <li>阅读了hexo的文档，但是css和HTML没学习</li>  
-    <li>硬件结构的“ROM和RAM”学习完毕</li>   
+    <li>完成了study-list的补充</li>
+    <li>阅读了hexo的文档，但是css和HTML没学习</li>
+    <li>硬件结构的“ROM和RAM”学习完毕</li>
     </ul>
 
 
-<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1524326061537&di=d6cc9efe3c05783797101fdd51d9de0b&imgtype=0&src=http%3A%2F%2Fp3.wmpic.me%2Farticle%2F2016%2F09%2F14%2F1473820667_vLWSnysM.jpg" alt="坚持" width="350" heigth="350">
+<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1524326061537&di=d6cc9efe3c05783797101fdd51d9de0b&imgtype=0&src=http%3A%2F%2Fp3.wmpic.me%2Farticle%2F2016%2F09%2F14%2F1473820667_vLWSnysM.jpg" alt="坚持" width="700" heigth="700">
+
+
+
+<h2>    Date：  2018.04.24</h2>
+<h2>    Address：   江苏英索纳杭州研发中心</h2>
+<h2>    Plan：  </h2>
+<audio controls= "controls" >
+<source src="http://up.mcyt.net/?down/38896.mp3" type="audio/mpeg"></audio>
+
+<ul>
+<li>完成ZAP2的硬件焊接与调试</li>
+<li>毕业设计完成传感器剩余软件部分</li>
+<li>硬件博客整理：“单片机之ROM&RAM”</li>
+<li>软件日常学习：TCP/c语言</li>
+</ul>
+<h2>    Finished:</h2>
+<ul>
+<li>毕业设计软件部分完成</li>
+<li>硬件博客整理完成一半</li>
+<li>软件日常学习完成</li>
+</ul>
+<img src="http://img2.ph.126.net/raCmE0BVMU4gfpBoi0dK8g==/6597865813077268874.jpg" alt="西湖" width="700" heigth="700">
