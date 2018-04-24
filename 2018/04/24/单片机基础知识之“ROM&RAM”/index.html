@@ -15,23 +15,22 @@
   
   
   
-  <title>单片机内部结构与原理 | Iblog</title>
+  <title>Iblog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="单片机基本知识汇总与分析">
-<meta name="keywords" content="硬件,单片机,电路">
+  <meta name="description" content="单片机基础之“ROM&amp;RAM”      对单片机中的ROM和RAM做一个简单的研究与知识汇总，后续可能还会有补充！">
+<meta name="keywords" content="Linux 嵌入式 博客 分享 摄影 学习">
 <meta property="og:type" content="article">
-<meta property="og:title" content="单片机内部结构与原理">
-<meta property="og:url" content="http://jianghublog.com/2018/04/18/单片机内部结构与原理/index.html">
+<meta property="og:title" content="Iblog">
+<meta property="og:url" content="http://jianghublog.com/2018/04/24/单片机基础知识之“ROM&RAM”/index.html">
 <meta property="og:site_name" content="Iblog">
-<meta property="og:description" content="单片机基本知识汇总与分析">
+<meta property="og:description" content="单片机基础之“ROM&amp;RAM”      对单片机中的ROM和RAM做一个简单的研究与知识汇总，后续可能还会有补充！">
 <meta property="og:locale" content="default">
-<meta property="og:image" content="http://www.diangon.com/image/portal/201412/07/080230rtrmxrltr3rgmerz.jpg">
-<meta property="og:image" content="http://tse2.mm.bing.net/th?id=OIP.fdAiOxuTSZNGwHuvA3rD8gHaFm&w=300&h=300&p=0&o=5&pid=1.7">
-<meta property="og:updated_time" content="2018-04-20T12:51:20.581Z">
+<meta property="og:image" content="https://pic002.cnblogs.com/images/2012/390495/2012042312183359.png">
+<meta property="og:updated_time" content="2018-04-24T13:00:16.560Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="单片机内部结构与原理">
-<meta name="twitter:description" content="单片机基本知识汇总与分析">
-<meta name="twitter:image" content="http://www.diangon.com/image/portal/201412/07/080230rtrmxrltr3rgmerz.jpg">
+<meta name="twitter:title" content="Iblog">
+<meta name="twitter:description" content="单片机基础之“ROM&amp;RAM”      对单片机中的ROM和RAM做一个简单的研究与知识汇总，后续可能还会有补充！">
+<meta name="twitter:image" content="https://pic002.cnblogs.com/images/2012/390495/2012042312183359.png">
   
   
     <link rel="icon" href="/css/images/favicon.ico">
@@ -72,65 +71,123 @@
     </nav>
 </header>
       <div id="main" class="wrapper">
-        <div id="primary" class="site-content"><div id="content" role="main"><article id="post-单片机内部结构与原理" class="post-单片机内部结构与原理 post type-post status-publish format-standard hentry">
+        <div id="primary" class="site-content"><div id="content" role="main"><article id="post-单片机基础知识之“ROM&amp;RAM”" class="post-单片机基础知识之“ROM&amp;RAM” post type-post status-publish format-standard hentry">
     <!---->
 
       <header class="entry-header">
         
-        
-  
-    <h1 class="entry-title article-title">
-      单片机内部结构与原理
-    </h1>
-  
-
-        
         <div class="comments-link">
             
-            <a href="javascript:void(0);" data-url="http://jianghublog.com/2018/04/18/单片机内部结构与原理/" data-id="cjgdohwvy000cxww94wh22q82" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+            <a href="javascript:void(0);" data-url="http://jianghublog.com/2018/04/24/单片机基础知识之“ROM&RAM”/" data-id="cjgdohwvr0007xww9lv7e82cm" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
     <div class="entry-content">
       
-        <p><cite>单片机基本知识汇总与分析</cite><br><a id="more"></a> </p>
- <h2>单片机的内部结构</h2>  
+        <!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>单片机基础之“ROM&RAM”</title>
+  </head>
+  对单片机中的ROM和RAM做一个简单的研究与知识汇总，后续可能还会有补充！
+  <a id="more"></a>
+  <style type="text/css">
+  h1.intro
+  {
+  color: blue;
+  text-align: center;
+  }
+  .background
+  {
+    background-color: yellow;
+  }
+  </style>
+  <body>
 
-<p><div style="text-indent:2em">        </div></p>
-<p><br>单片机是计算机的浓缩版，一般不带操作系统，只具备微控制器的作用。典型的如ST的51单片机、AVR单片机、MSP430单片机。这些单片机基本结构相同，其工作流程也大致相当，现解析如下：<br>以MCS-51系列单片机为例，改系列的单片机有8051，8031,8751,80C51,80C31等型号。他们的内部结构基本相同，只不过存储器大小可能会有一点差别，进行使得运行速度等不同。</p>
+    <h1 class="intro background">ROM&RAM详解</h1>
+  <h2>前言</h2>
+<p>ROM（程序存储器）和RAM（数据存储器）作为单片机中内部结构中必不可少的模块，担任着所有的存储功能，同时其容量的大小，也是单片机性能的体现之一。
+如果想深究单片机的内部工作原理，那么ROM和RAM是一道绕不开的坎。以下（MCS-51单片机）就是个人的一点理解与学习笔记汇总。</p>
 
-<p></p><h3>单片机的内部组成</h3>    <p></p>
-<p><font size="4"><br>单片机一般由CPU（Central Process Unity）、ROM（程序存储器）、RAM（数据存储器）、定时/计数器、终端、并行I/O口、时钟等模块组成。可概括如下：<br><ul><br><li>一个8位的CPU</li><br><li>4K字节的ROM程序存储器<font size="4" color="orange">（为什么是4K?？）</font></li><br><li>128字节的RAM数据存储器<font size="4" color="orange">(为什么是128字节？)</font></li><br><li>两个16位的定时器/计数器</li><br><li>可对外部64K程序存储器和数据存储器进行寻址的控制电路<font color="orange">(为什么是64K？)</font></li><br><li>4个8位的并行扩展I/O口</li><br><li>一个可编程的全双工串行口（TXD/RXD）</li><br><li>五个中断源，两个优先级嵌套总段结构 <font color="orange">(哪五个中断源？)</font></li><br></ul><br> </font></p> 
+  <h2>ROM</h2>
+<h3>概念</h3>
+<p>
+ROM(Read only Memory)：只读存储器，在出厂以后只能读取而不能写入，一般用来作为程序存储器存储固件或者程序。
+<br>
+特征：掉电不丢失数据，每次上电之后程序又从头开始运行，其中的程序在产品出厂前就写好，用户无法修改。
 
-<p> 单片机的内部结构图示如下：<br> <img src="http://www.diangon.com/image/portal/201412/07/080230rtrmxrltr3rgmerz.jpg" alt="MCS-51" width="500" heigth="500">     </p>
-<p> 下面对每一部分进行较为详细的解说：<br> <b><font size="5">CPU</font></b><br> </p><p><br> CPU（中央处理器）是一块超大规模的集成电路，是一台计算机的运算核心和控制核心，其主要功能是解释指令和控制进行运算，主要包括逻辑单元（指令寄存器、指令译码器、控制单元、寄存器、ALU、预取单元、总线单元、数据缓存）、存储单元、控制单元三大部分组成。CPU、内部存储单元（Memory）、输入输出设备（I/O）合称为计算机的三大核心部件。<br> MCS-51的CPU是8位的处理器。它可以处理半字节（4位）、8字节的运算，进行加、减、乘、除、取反、异或、与或、进制转换等操作。<br> <code>关于CPU的位数：单片机最低是8位，其发展时间长，价格低廉，应用广泛。后来又依次出现了16位、32位的单片机。这些单片机数据的处理能理强，运行速度更快。对于8位的单片机，当面对16位，32位的数据时，就要分多次来操作，而32位的CPU可以一次操作完毕。CPU内部的<a href="https://baike.baidu.com/item/%E7%AE%97%E6%9C%AF%E9%80%BB%E8%BE%91%E5%8D%95%E5%85%83/8954657?fr=aladdin&fromid=62687&fromtitle=ALU" target="_blank" rel="noopener">ALU(Arithmetic and Logic Unit)</a>,寄存器是几位宽度，因为它们才是运行的核心单元。<font color="gray" size="3">单片机具体指令执行流程后面进行讲解</font></code><br> <img src="http://tse2.mm.bing.net/th?id=OIP.fdAiOxuTSZNGwHuvA3rD8gHaFm&w=300&h=300&p=0&o=5&pid=1.7" alt="单片机内部结构图" width="500" heigth="500"></p><p></p>
-<p><b><font soze="5">RAM &amp; ROM</font></b>  </p>
-<p><br>作为单片机中的三大核心组成之一，ROM&amp;RAM扮演着极其中的角色，存储数据、程序，以及运算过程中产生的变量，存放程序执行的结果等等。<br>ROM(Read Only Memory):只读存储器，只能通过特定的方式写入数据，断电之后不会消失，用来存放程序。<br><br></p>
+</p>
+<h3>大小及结构</h3>
+<p>
+  ROM可分为片内ROM和片外ROM。片内ROM只满足基本程序的大小需求，当用户的程序需要更大的存储空间时，
+  可以选择外接程序存储器来扩展程序。<br> <br>
+
+  片内ROM：4KB字节（000H-FFFH）、寻址指令：MOVC <br>
+  片外ROM：64KB字节（0000H-FFFFH）、寻址指令：MOVC <br> <br>
+  关于ROM的可寻址范围：由于ROM的程序地址寄存器是16位寻址，因此最大可以实现65536(1111111111111111)字节，即大约64K字节的存储器寻址。但是
+  单片机内部由于成本等原因只配置4K字节的空间，但是外部配置便可以实现最大化的寻址。存储器的最大容量，取决于可寻址长度，当可寻址长度成为4字节32位时
+  就可以配置4294967296（11111111111111111111111111111111）字节的ROM存储器。 <br> <br>
+  ROM的内部结构分布： <br>
+  0000H：程序的第一条指令，复位时程序计数器所指向的地址 <br>
+  0003F：INT0中断入口 <br>
+  000BH：T0中断入口 <br>
+  0013H：INT1中断入口 <br>
+  001BH：T1中断入口 <br>
+  0023H：串行中断入口 <br>
+  0100H：主程序 <br> <br>
+  由存储分布可知，开始执行程序时，并不是按照地址的顺序依次寻址取指令，需要先跳过前面的几个中断地址入口，直接到达0100H的
+  主程序入口，再开始执行主程序，而各中断服务程序都存放在各自的地址范围内，比如： <br>
+  INT0中断程序：0003H--000AH;		7字节  <br>
+  T0中断程序：000BH--0012H；	7字节 <br>
+  ITN1中断程序：0013H--001AH;		7字节 <br>
+  T1中断程序：01BH--0022H;		7字节 <br>
+  串行中断程序：023H--00FFH；	237字节 <br>
+  示意图如下： <br>
+<img src="https://pic002.cnblogs.com/images/2012/390495/2012042312183359.png" alt="ROM内部布局" width="500"> <br>
+单片机第一条指令的两个特征： <br>
+①存放在ROM的0000H单元； <br>
+②必须是“跳转指令”以跳过下面的5个中断矢量，转到后面的真正的主程序入口0100H单元。 <br>
 
 
 
 
 
+</p>
+
+
+
+<h3>工作方式</h3>
+
+
+
+  <h2>RAM</h2>
+<h3>概念</h3>
+<h3>大小及内部结构</h3>
+<h3>工作方式</h3>
+
+
+
+  <h2>后续补充</h2>
+
+
+
+
+
+  </body>
+</html>
 
       
     </div><!-- .entry-content -->
 
     <footer class="entry-meta">
-    <a href="/2018/04/18/单片机内部结构与原理/">
-    <time datetime="2018-04-18T08:34:04.000Z" class="entry-date">
-        2018-04-18
+    <a href="/2018/04/24/单片机基础知识之“ROM&RAM”/">
+    <time datetime="2018-04-24T10:50:28.314Z" class="entry-date">
+        2018-04-24
     </time>
 </a>
     
-  <span class="article-delim">&#8226;</span>
-  <div class="article-category">
-  <a class="article-category-link" href="/categories/嵌入式硬件/">嵌入式硬件</a>
-  </div>
-
     
-  <span class="article-delim">&#8226;</span>
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/单片机/">单片机</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/电路/">电路</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/硬件/">硬件</a></li></ul>
-
     </footer>
 </article>
 
@@ -139,10 +196,8 @@
 <nav class="nav-single">
     <h3 class="assistive-text">文章导航</h3>
     
-        <span class="nav-previous"><a href="/2018/04/19/study-list/" rel="prev"><span class="meta-nav">←</span> study-list</a></span>
     
-    
-        <span class="nav-next"><a href="/2018/04/12/Work-Recording/" rel="next">工作任务安排与完成情况 <span class="meta-nav">→</span></a></span>
+        <span class="nav-next"><a href="/2018/04/24/Linux命令行汇总/" rel="next">(no title) <span class="meta-nav">→</span></a></span>
     
 </nav><!-- .nav-single -->
 
