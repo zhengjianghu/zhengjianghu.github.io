@@ -97,6 +97,7 @@ categories: 学习记录
 
 <h2>Linux</h2>
 <ul>
+<li>Linux下各文件目录详解</li>
 <li>命令行指令汇总</li>
 <li>关于文件系统</li>
 <li>关于分区与挂载</li>

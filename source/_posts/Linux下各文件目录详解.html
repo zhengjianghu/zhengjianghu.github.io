@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Linux下各文件目录详解</title>
+  </head>
+  <body>
+    <h1 align="center">Linux下各文件目录详解</h1>
+
+    <h2>/bin</h2>
+    <h2>/dev</h2>
+    <h2>/lost+foiund</h2>
+    <h2>/mydata</h2>
+    <h2>root</h2>
+    <h2>snap</h2>
+    <h2>/tmp</h2>
+    <h2>/boot</h2>
+    <h2>/etc</h2>
+    <h2>/lib</h2>
+    <h2>/media</h2>
+    <h2>/opt</h2>
+    <h2>/run</h2>
+    <h2>/srv</h2>
+    <h2>/usr</h2>
+    <h2>/data</h2>
+    <h2>/home</h2>
+    <h2>/lib64</h2>
+    <h2>/mnt</h2>
+    <h2>/proc</h2>
+    <h2>/sbin</h2>
+    <h2>/sys</h2>
+
+
+    <h2>/var文件系统</h2>
+    <p>/var 包括系统一般运行时要改变的数据.每个系统是特定的，即不通过网络与其他计算机共享.MySql也会安装在这里。 <br>
+      /var下各目录详解： <br> <br>
+      /catman：用来存放需要个别在第一次看时需要格式化的man页，格式化完的man页存放在/var/man中。（catman经常被清除，就
+      像是清楚缓存目录一样） <br> <br>
+      /var/lib： 系统正常运行时要改变的文件 <br> <br>
+      /usr/local 中安装的程序的可变数据(即系统管理员安装的程序).注意，如果必要，
+      即使本地安装的程序也会使用其他/var 目录，例如/var/lock .  <br> <br>
+      /var/lock：锁定文件.许多程序遵循在/var/lock 中产生一个锁定文件的约定，以支持他们正在使用某个特定的设备或文件.其他程序注意到这个锁定文件，将不试图使用这个设备或文件.  <br> <br>
+      /var/log：各种程序的Log文件，特别是login  (/var/log/wtmp log所有到系统的登录和注销) 和syslog (/var/log/messages 里存储所有核心和系统程序信息. /var/log 里的文件经常不确定地增长，应该定期清除.  <br> <br>
+      /var/run：保存到下次引导前有效的关于系统的信息文件.例如， /var/run/utmp 包含当前登录的用户的信息.  <br> <br>
+      /var/spool：mail, news, 打印队列和其他队列工作的目录.每个不同的spool在/var/spool 下有自己的子目录，例如，用户的邮箱在/var/spool/mail 中.  <br> <br>
+      /var/trmp：比/tmp 允许的大或需要存在较长时间的临时文件. (虽然系统管理员可能不允许/var/tmp 有很旧的文件.)  <br> <br>
+      
+
+
+
+
+
+
+
+    </p>
+
+
+
+  </body>
+</html>
