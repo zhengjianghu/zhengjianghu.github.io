@@ -15,19 +15,20 @@
   
   
   
-  <title>Category: 嵌入式硬件 | Iblog</title>
+  <title>Iblog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="A Dreaming World">
+  <meta name="description" content="Linux下各文件目录详解           Linux下各文件目录详解      /bin     /dev     /lost+foiund     /mydata     root     snap     /tmp     /boot     /etc     /lib     /media     /opt     /run     /srv     /us">
 <meta name="keywords" content="Linux 嵌入式 博客 分享 摄影 学习">
-<meta property="og:type" content="website">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Iblog">
-<meta property="og:url" content="http://jianghublog.com/categories/嵌入式硬件/index.html">
+<meta property="og:url" content="http://jianghublog.com/2018/04/26/Linux下各文件目录详解/index.html">
 <meta property="og:site_name" content="Iblog">
-<meta property="og:description" content="A Dreaming World">
+<meta property="og:description" content="Linux下各文件目录详解           Linux下各文件目录详解      /bin     /dev     /lost+foiund     /mydata     root     snap     /tmp     /boot     /etc     /lib     /media     /opt     /run     /srv     /us">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-04-26T13:35:27.775Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Iblog">
-<meta name="twitter:description" content="A Dreaming World">
+<meta name="twitter:description" content="Linux下各文件目录详解           Linux下各文件目录详解      /bin     /dev     /lost+foiund     /mydata     root     snap     /tmp     /boot     /etc     /lib     /media     /opt     /run     /srv     /us">
   
   
     <link rel="icon" href="/css/images/favicon.ico">
@@ -68,51 +69,109 @@
     </nav>
 </header>
       <div id="main" class="wrapper">
-        <div id="primary" class="site-content"><div id="content" role="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="post type-post status-publish format-standard hentry archive-type-post">
-  <header class="entry-header">
-      
-  
-    <h1 class="entry-title">
-      <a class="archive-article-title" href="/2018/04/18/单片机内部结构与原理/">单片机内部结构与原理</a>
-    </h1>
-  
+        <div id="primary" class="site-content"><div id="content" role="main"><article id="post-Linux下各文件目录详解" class="post-Linux下各文件目录详解 post type-post status-publish format-standard hentry">
+    <!---->
 
-  </header>
-  <footer class="entry-meta">
-    <a href="/2018/04/18/单片机内部结构与原理/">
-    <time datetime="2018-04-18T08:34:04.000Z" class="entry-date">
-        2018-04-18
+      <header class="entry-header">
+        
+        <div class="comments-link">
+            
+            <a href="javascript:void(0);" data-url="http://jianghublog.com/2018/04/26/Linux下各文件目录详解/" data-id="cjggkps9s0000sgw9rtpxucx8" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+        </div><!-- .comments-link -->
+      </header><!-- .entry-header -->
+
+    <div class="entry-content">
+      
+        <!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Linux下各文件目录详解</title>
+  </head>
+  <body>
+    <h1 align="center">Linux下各文件目录详解</h1>
+
+    <h2>/bin</h2>
+    <h2>/dev</h2>
+    <h2>/lost+foiund</h2>
+    <h2>/mydata</h2>
+    <h2>root</h2>
+    <h2>snap</h2>
+    <h2>/tmp</h2>
+    <h2>/boot</h2>
+    <h2>/etc</h2>
+    <h2>/lib</h2>
+    <h2>/media</h2>
+    <h2>/opt</h2>
+    <h2>/run</h2>
+    <h2>/srv</h2>
+    <h2>/usr</h2>
+    <h2>/data</h2>
+    <h2>/home</h2>
+    <h2>/lib64</h2>
+    <h2>/mnt</h2>
+    <h2>/proc</h2>
+    <h2>/sbin</h2>
+    <h2>/sys</h2>
+
+
+    <h2>/var文件系统</h2>
+    <p>/var 包括系统一般运行时要改变的数据.每个系统是特定的，即不通过网络与其他计算机共享.MySql也会安装在这里。 <br>
+      /var下各目录详解： <br> <br>
+      /catman：用来存放需要个别在第一次看时需要格式化的man页，格式化完的man页存放在/var/man中。（catman经常被清除，就
+      像是清楚缓存目录一样） <br> <br>
+      /var/lib： 系统正常运行时要改变的文件 <br> <br>
+      /usr/local 中安装的程序的可变数据(即系统管理员安装的程序).注意，如果必要，
+      即使本地安装的程序也会使用其他/var 目录，例如/var/lock .  <br> <br>
+      /var/lock：锁定文件.许多程序遵循在/var/lock 中产生一个锁定文件的约定，以支持他们正在使用某个特定的设备或文件.其他程序注意到这个锁定文件，将不试图使用这个设备或文件.  <br> <br>
+      /var/log：各种程序的Log文件，特别是login  (/var/log/wtmp log所有到系统的登录和注销) 和syslog (/var/log/messages 里存储所有核心和系统程序信息. /var/log 里的文件经常不确定地增长，应该定期清除.  <br> <br>
+      /var/run：保存到下次引导前有效的关于系统的信息文件.例如， /var/run/utmp 包含当前登录的用户的信息.  <br> <br>
+      /var/spool：mail, news, 打印队列和其他队列工作的目录.每个不同的spool在/var/spool 下有自己的子目录，例如，用户的邮箱在/var/spool/mail 中.  <br> <br>
+      /var/trmp：比/tmp 允许的大或需要存在较长时间的临时文件. (虽然系统管理员可能不允许/var/tmp 有很旧的文件.)  <br> <br>
+      
+
+
+
+
+
+
+
+    </p>
+
+
+
+  </body>
+</html>
+
+      
+    </div><!-- .entry-content -->
+
+    <footer class="entry-meta">
+    <a href="/2018/04/26/Linux下各文件目录详解/">
+    <time datetime="2018-04-26T08:33:06.353Z" class="entry-date">
+        2018-04-26
     </time>
 </a>
     
-  <span class="article-delim">&#8226;</span>
-  <div class="article-category">
-  <a class="article-category-link" href="/categories/嵌入式硬件/">嵌入式硬件</a>
-  </div>
-
     
-  <span class="article-delim">&#8226;</span>
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/单片机/">单片机</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/电路/">电路</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/硬件/">硬件</a></li></ul>
-
     </footer>
 </article>
-  
-  
-    </div></section>
-  
+
+
+    
+<nav class="nav-single">
+    <h3 class="assistive-text">文章导航</h3>
+    
+    
+        <span class="nav-next"><a href="/2018/04/24/单片机基础知识之“ROM&RAM”/" rel="next">(no title) <span class="meta-nav">→</span></a></span>
+    
+</nav><!-- .nav-single -->
+
+
+
+
+
+
 
 </div></div>
         <div id="secondary" class="widget-area" role="complementary">
