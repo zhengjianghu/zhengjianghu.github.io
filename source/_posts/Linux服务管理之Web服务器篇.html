@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Linux服务管理之Web服务篇</title>
+  </head>
+  <body>
+    <h1>什么是Web服务器</h1>
+
+
+    <p>
+    Web服务器：一种运行于Windows、UNIX/Linux等系统远程物理或虚拟服务器上用来处理浏览器客户端的请求，并以HTML文档的方式返回请结果的程序，
+    是一种服务程序。可以向浏览器等Web客户端提供文档， [1]  也可以放置网站文件，让全世界浏览；可以放置数据文件，让全世界下载。
+    <br> <br>
+  类似于一种浏览器客户端请求和远程服务器请求服务之间的沟通桥梁。
+    </p>
+
+
+    <h1>Web服务器用来做什么</h1>
+
+
+
+    <p>
+    由其定义可知其具有以下功能： <br>
+    <ul>
+      <li>作为服务器，接收来自浏览器客户端Web请求</li>
+      <li>将来自浏览器客户端的请求发送给主机的服务程序（server—side），由服务程序来为完成事务处理、数据库连接功能，得出回应结果</li>
+      <li>接收来自服务程序的请求回应结果（respond）</li>
+      <li>基于HTTPS协议向浏览器客户端回传HTML格式的文档最为其请求回应</li>
+    </ul>
+    </p>
+
+
+    <h1>Web服务器延伸</h1>
+
+
+    <h2>服务器主流：</h2>
+    Apach：<br>
+  <p>Apache仍然是世界上用的最多的Web服务器，市场占有率达60%左右。它源于NCSAhttpd服务器，当NCSAWWW服务器项目停止后，那些使用NCSA
+    WWW服务器的人们开始交换用于此服务器的补丁，这也是apache名称的由来（pache 补丁）。世界上很多著名的网站都是Apache的产物，它的成功之处主要在于它的源代码开放、
+    有一支开放的开发队伍、支持跨平台的应用（可以运行在几乎所有的Unix、Windows、Linux系统平台上）以及它的可移植性等方面。
+  </p> <br> <br>
+
+    IIS：<br>
+  <p>Microsoft的Web服务器产品为Internet Information Services （IIS），IIS 是允许在公共Intranet或Internet上发布信息的Web服务器。ⅡS是目前最流行的Web服务器产品之一，很多著名的网站都是建立在ⅡS的平台上。
+    IIS提供了一个图形界面的管理工具，称为Internet服务管理器，可用于监视配置和控制Internet服务。
+    IIS是一种Web服务组件，其中包括Web服务器、FTP服务器、NNTP服务器和SMTP服务器，分别用于网页浏览、文件传输、新闻服务和邮件发送等方面，它使得在网络（包括互联网和局域网）上发布信息成了一件很容易的事。
+    它提供ISAPI(Intranet Server API）作为扩展Web服务器功能的编程接口；同时，它还提供一个Internet数据库连接器，可以实现对数据库的查询和更新。
+  </p> <br> <br>
+
+    Nginx：<br>
+  <p>Nignx是一款轻量级的Web服务器/反向代理服务器及电子邮件（IMAP/POP3）代理服务器，并在一个BSD-like 协议下发行。其特点是占有内存少，并发能力强，事实上nginx的并发能力确实在同类型的网页服务器中表现较好，
+    中国大陆使用nginx网站用户有：百度、京东、新浪、网易、腾讯、淘宝等。
+  </p>
+
+    <h2>服务器特点：</h2>
+  <p>Windows，Linux与Unix这3个操作系统是架设Web服务器比较常见的操作系统。Linux的安全性能在这3个操作系统中最高，可以支持多个硬件平台，其网络功能比较强大。总的来说，这两大优点是其他操作系统不可替代的：第一，可以依据用户不同的需求来随意修改、
+    调整与复制各种程序的源码以及发布在互联网上；第二，Linux操作系统的市场价格比较便宜，也能够在互联网上免费下载源码。可以说，Linux为架设既高效又安全的Web服务器的比较理想的操作系统。此外，要让Web服务器更具有优越的性能，
+    可以根据服务器系统之特点与用途作进一步的优化与处理，尽量减少Web服务器的数据传输量以及降低其数据传输的频率，进而促进网络宽带的利用率与使用率，以及提高网络客户端的网页加载的速度，同时也可以减少Web服务器各种资源的消耗。
+  </p>
+
+    <h2>服务器工作原理：</h2>
+    <h3>宏观</h3>
+  <p>Web服务器的工作原理并不复杂，一般可分成如下4个步骤：连接过程、请求过程、应答过程以及关闭连接。下面对这4个步骤作一简单的介绍。连接过程就是Web服务器和其浏览器之间所建立起来的一种连接。查看连接过程是否实现，
+      用户可以找到和打开socket这个虚拟文件，这个文件的建立意味着连接过程这一步骤已经成功建立。请求过程就是Web的浏览器运用socket这个文件向其服务器而提出各种请求。应答过程就是运用HTTP协议把在请求过程中所提出来的请求传输到Web的服务器，
+      进而实施任务处理，然后运用HTTP协议把任务处理的结果传输到Web的浏览器，同时在Web的浏览器上面展示上述所请求之界面。关闭连接就是当上一个步骤--应答过程完成以后，Web服务器和其浏览器之间断开连接之过程。Web服务器上述4个步骤环环相扣、
+      紧密相联，逻辑性比较强，可以支持多个进程、多个线程以及多个进程与多个线程相混合的技术。
+  </p> <br> <br>
+
+    <h3>微观</h3>
+  <p>  Web服务器可以解析（handles)HTTP协议。当Web服务器接收到一个HTTP请求（request），会返回一个HTTP响应（response），例如送回一个HTML页面。为了处理一个请求（request），Web服务器可以响应（response）一个静态页面或图片，
+    进行页面跳转(redirect），或者把动态响应（dynamic response）的产生委托（delegate）给一些其它的程序例如CGI脚本，JSP(JavaServer Pages）脚本，servlets，ASP(Active Server Pages）脚本，服务器端（server-side)JavaScript，
+    或者一些其它的服务器端（server-side）技术。无论它们（译者注：脚本）的目的如何，这些服务器端（server-side）的程序通常产生一个HTML的响应（response）来让浏览器可以浏览。
+    要知道，Web服务器的代理模型（delegation model）非常简单。当一个请求（request）被送到Web服务器里来时，它只单纯的把请求（request）传递给可以很好的处理请求（request）的程序（译者注：服务器端脚本）。Web服务器仅仅提供一个可以执行服务器端（server-side）
+    程序和返回（程序所产生的）响应（response）的环境，而不会超出职能范围。服务器端（server-side）程序通常具有事务处理（transaction processing），数据库连接（database connectivity）和消息（messaging）等功能。
+    虽然Web服务器不支持事务处理或数据库连接池，但它可以配置（employ）各种策略（strategies）来实现容错性（fault tolerance）和可扩展性（scalability），例如负载平衡（load balancing），缓冲（caching）。
+    集群特征（clustering—features）经常被误认为仅仅是应用程序服务器专有的特征。
+  </p> <br> <br>
+
+
+
+    <h1>如何搭建一个Web服务器</h1>
+
+
+    最原始的Web服务原理如下：<br>
+    <img src="http://s3.51cto.com/wyfs02/M02/89/A9/wKioL1gZfIeQeV-xAAB83hsrW_A754.png" alt="Web原理">
+    <br>
+    上图所示为最原始的Web工作原理，即，可分为三部分： <br>
+    <ul>
+      <li>Browser和Apache之间的TCP/IP连接、接收HTTP格式的Request</li>
+      <li>Apache与Application之间的交流（Application接收Apache的request,然后连接数据库等进行处理，生成response发送给Apache）</li>
+      <li>Apache发送Response到Broswer</li>
+    </ul>
+    上述步骤中，其中1和3由服务器完成，而最重要的便是第二步，即构建Application应用程序，以便实现多功能的Web服务。Web的开始发展阶段，该工作全部从头开发编写，到来诸多不便，
+    后来便出现了许多可以完成此应用服务功能而且节省开发成本的Web框架，比如MVC架构。Web架构的好处是大大节省了开发时间，并且实用，可以减少重复，避免写出庞杂，混乱的代码，
+    人们将 Web 开发的关键性过程提取出来，开发出了各种 Web 框架。有了框架，就可以专注于编写清晰、易维护的代码，无需关心数据库连接之类的重复性工作。
+    MVC框架示意： <br>
+    <img src="http://s2.51cto.com/wyfs02/M00/89/AB/wKiom1gZfMLiu9uAAADEwfxJLEk533.png" alt="MCV框架">
+    <br>
+    这样就可以将一个完整的Web服务划分为两大部分：Web服务器（例如Apache）+ Web框架（例如MCV）。 <br>
+    新的问题：Web服务器和Web框架之间需要通信，但是框架和服务器各自都有很多种，服务器比如Apache、Nginx等，框架比如Ruby on Rails 、Django等，如果二者不相匹配的话，就会出现组合限制。 <br>
+    解决办法：设计一套二者之间的借口API。 <br>
+
+    通过上面的描述便可知道，搭建一个Web服务器，基本可以按照下面的要求进行： <br>
+    <ul>
+      <li>选择一个合适的Web服务器</li>
+      <li>选择一个合适的Web框架</li>
+      <li>建立数据库</li>
+    </ul>
+
+
+
+    <h1>在Linux上搭建Web服务器</h1>
+
+
+
+  </body>
+</html>

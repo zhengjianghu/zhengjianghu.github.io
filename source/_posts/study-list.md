@@ -77,7 +77,7 @@ categories: 学习记录
 <h2>产品研发相关</h2>
 <ul>
 <li>嵌入式产品开发流程与模型</li>
-<li>硬件产品的焊接与打样调试相关</li>
+<li>硬件产品的焊接与测试、调试汇总</li>
 <li>EMC电磁兼容性学习</li>
 <li>RF学习</li>
 </ul>
@@ -98,7 +98,8 @@ categories: 学习记录
 <h2>Linux</h2>
 <ul>
 <li>Linux下各文件目录详解</li>
-<li>命令行指令汇总</li>
+<li>命令行指令汇总（Shell设置、文件与目录管理、文件属性与权限、压缩指令与查找系统、硬盘管理、用户管理、用户磁盘配额、进程管理与作业调度、网络管理）</li>
+<li>Linux服务管理（www服务、FTP服务、Mail服务、DHCP服务、SMB服务、DNS服务）</li>
 <li>关于文件系统</li>
 <li>关于分区与挂载</li>
 <li>Cmake、makefile作用及其语法规则（GNU Make）</li>

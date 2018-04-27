@@ -497,3 +497,47 @@ categories: 学习记录
 <tr><th colspan="4">备注：帮别人搞了一天的网站搭建，虽然浪费了时间，但是也学到了Linux的很多东西 </th>
 </table>
 <img src="http://img4.dwstatic.com/df/1308/241718243782/241718890895.jpg" alt="蒂法" width="1500" heigth="1500"> <br> <br>
+
+<table id="customers">
+<tr>
+<th>Address</th>
+<th>Date</th>
+<th>Weather</th>
+<th>Daily Music</th>
+</tr>
+
+<tr class="alt">
+<td>江苏英索纳杭州研发中心</td>
+<td>2018-04-26</td>
+<td><img src="http://tse2.mm.bing.net/th?id=OIP.DmssU67MDBFH5n2mvc5mtwHaE7&w=300&h=300&p=0&o=5&pid=1.7" width="100" height="40"></td>
+<td><audio controls="controls" loop preload>
+<source src="http://up.mcyt.net/?down/39625.mp3" type="audio/mpeg">
+</audio></td>
+</tr>
+
+<tr><th colspan="2"> Plan </th><th colspan="2"> Finished </th>
+</tr>
+<tr>
+<th colspan="2"> 调整ZAP2的功耗问题</th> <th colspan="2"> 100%</th>
+</tr>
+<tr>
+<th colspan="2" > 整理昨天的博客搭建笔记</th> <th colspan="2" > 90%</th>
+</tr>
+<tr>
+<th colspan="2" > 整理Linux的学习布局、将昨天用到的部分进行深入学习</th> <th colspan="2" > 90%</th>
+</tr>
+<tr>
+<th colspan="2" > 硬件日常学习之“单片机结构”</th> <th colspan="2"> 0%</th>
+</tr>
+<tr>
+<th colspan="2" > 软件日常学习之“TCP/IP”和C语言</th> <th colspan="2" > 0%</th>
+</tr>
+<tr>
+<th colspan="4" > 备注：上午和中午忙着测试功耗，下午一直在看Web服务器的知识，整理了一部分博客。</th>
+</tr>
+<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1524844502368&di=79a4036f85d31f1b915c1aec0cdfce22&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2F7c1ed21b0ef41bd5732e30e95bda81cb39db3daa.jpg" alt="夜空" width="" height="" >
+
+
+
+
+</table>
