@@ -15,19 +15,23 @@
   
   
   
-  <title>Tag: 单片机 | Iblog</title>
+  <title>单片机内部结构与原理 | Iblog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="A Dreaming World">
-<meta name="keywords" content="Linux 嵌入式 博客 分享 摄影 学习">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Iblog">
-<meta property="og:url" content="http://jianghublog.com/tags/单片机/index.html">
+  <meta name="description" content="单片机基本知识汇总与分析">
+<meta name="keywords" content="硬件,单片机,电路">
+<meta property="og:type" content="article">
+<meta property="og:title" content="单片机内部结构与原理">
+<meta property="og:url" content="http://jianghublog.com/2018/04/18/【嵌入式硬件】【单片机基础知识】单片机内部结构与原理/index.html">
 <meta property="og:site_name" content="Iblog">
-<meta property="og:description" content="A Dreaming World">
+<meta property="og:description" content="单片机基本知识汇总与分析">
 <meta property="og:locale" content="default">
+<meta property="og:image" content="http://www.diangon.com/image/portal/201412/07/080230rtrmxrltr3rgmerz.jpg">
+<meta property="og:image" content="http://tse2.mm.bing.net/th?id=OIP.fdAiOxuTSZNGwHuvA3rD8gHaFm&w=300&h=300&p=0&o=5&pid=1.7">
+<meta property="og:updated_time" content="2018-04-20T12:51:20.581Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Iblog">
-<meta name="twitter:description" content="A Dreaming World">
+<meta name="twitter:title" content="单片机内部结构与原理">
+<meta name="twitter:description" content="单片机基本知识汇总与分析">
+<meta name="twitter:image" content="http://www.diangon.com/image/portal/201412/07/080230rtrmxrltr3rgmerz.jpg">
   
   
     <link rel="icon" href="/css/images/favicon.ico">
@@ -68,30 +72,80 @@
     </nav>
 </header>
       <div id="main" class="wrapper">
-        <div id="primary" class="site-content"><div id="content" role="main">
+        <div id="primary" class="site-content"><div id="content" role="main"><article id="post-【嵌入式硬件】【单片机基础知识】单片机内部结构与原理" class="post-【嵌入式硬件】【单片机基础知识】单片机内部结构与原理 post type-post status-publish format-standard hentry">
+    <!---->
+
+      <header class="entry-header">
+        
+        
   
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="post type-post status-publish format-standard hentry archive-type-post">
-  <header class="entry-header">
-      
-  
-    <h1 class="entry-title">
-      <a class="archive-article-title" href="/2018/04/18/【嵌入式硬件】【单片机基础知识】单片机内部结构与原理/">单片机内部结构与原理</a>
+    <h1 class="entry-title article-title">
+      单片机内部结构与原理
     </h1>
   
 
-  </header>
-  <footer class="entry-meta">
+        
+        <div class="comments-link">
+            
+            <a href="javascript:void(0);" data-url="http://jianghublog.com/2018/04/18/【嵌入式硬件】【单片机基础知识】单片机内部结构与原理/" data-id="cjgm3idyn000n3ow9vfg1b1d8" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+        </div><!-- .comments-link -->
+      </header><!-- .entry-header -->
+
+    <div class="entry-content">
+      
+        
+<cite>单片机基本知识汇总与分析</cite>   
+<a id="more"></a> 
+
+ <h2>单片机的内部结构</h2>  
+     
+<div style="text-indent:2em">        
+<p>
+单片机是计算机的浓缩版，一般不带操作系统，只具备微控制器的作用。典型的如ST的51单片机、AVR单片机、MSP430单片机。这些单片机基本结构相同，其工作流程也大致相当，现解析如下： 
+以MCS-51系列单片机为例，改系列的单片机有8051，8031,8751,80C51,80C31等型号。他们的内部结构基本相同，只不过存储器大小可能会有一点差别，进行使得运行速度等不同。</p>
+
+<h3>单片机的内部组成</h3>    
+<p><font size="4">
+单片机一般由CPU（Central Process Unity）、ROM（程序存储器）、RAM（数据存储器）、定时/计数器、终端、并行I/O口、时钟等模块组成。可概括如下：  
+<ul>
+<li>一个8位的CPU</li>   
+<li>4K字节的ROM程序存储器<font size="4" color="orange">（为什么是4K?？）</font></li>
+<li>128字节的RAM数据存储器<font size="4" color="orange">(为什么是128字节？)</font></li> 
+<li>两个16位的定时器/计数器</li>  
+<li>可对外部64K程序存储器和数据存储器进行寻址的控制电路<font color="orange">(为什么是64K？)</font></li>    
+<li>4个8位的并行扩展I/O口</li>  
+<li>一个可编程的全双工串行口（TXD/RXD）</li>  
+<li>五个中断源，两个优先级嵌套总段结构 <font color="orange">(哪五个中断源？)</font></li>
+</ul>
+ </font></p> 
+
+ 单片机的内部结构图示如下：
+ <img src="http://www.diangon.com/image/portal/201412/07/080230rtrmxrltr3rgmerz.jpg" alt="MCS-51" width="500" heigth="500">     
+
+ 下面对每一部分进行较为详细的解说：  
+ <b><font size="5">CPU</font></b>
+ <p>       
+ CPU（中央处理器）是一块超大规模的集成电路，是一台计算机的运算核心和控制核心，其主要功能是解释指令和控制进行运算，主要包括逻辑单元（指令寄存器、指令译码器、控制单元、寄存器、ALU、预取单元、总线单元、数据缓存）、存储单元、控制单元三大部分组成。CPU、内部存储单元（Memory）、输入输出设备（I/O）合称为计算机的三大核心部件。
+ MCS-51的CPU是8位的处理器。它可以处理半字节（4位）、8字节的运算，进行加、减、乘、除、取反、异或、与或、进制转换等操作。  
+ <code>关于CPU的位数：单片机最低是8位，其发展时间长，价格低廉，应用广泛。后来又依次出现了16位、32位的单片机。这些单片机数据的处理能理强，运行速度更快。对于8位的单片机，当面对16位，32位的数据时，就要分多次来操作，而32位的CPU可以一次操作完毕。CPU内部的<a href="https://baike.baidu.com/item/%E7%AE%97%E6%9C%AF%E9%80%BB%E8%BE%91%E5%8D%95%E5%85%83/8954657?fr=aladdin&fromid=62687&fromtitle=ALU" target="_blank" rel="noopener">ALU(Arithmetic and Logic Unit)</a>,寄存器是几位宽度，因为它们才是运行的核心单元。<font color="gray" size="3">单片机具体指令执行流程后面进行讲解</font></code>   
+ <img src="http://tse2.mm.bing.net/th?id=OIP.fdAiOxuTSZNGwHuvA3rD8gHaFm&w=300&h=300&p=0&o=5&pid=1.7" alt="单片机内部结构图" width="500" heigth="500"></p>
+
+<b><font soze="5">RAM & ROM</font></b>  
+<p>
+作为单片机中的三大核心组成之一，ROM&RAM扮演着极其中的角色，存储数据、程序，以及运算过程中产生的变量，存放程序执行的结果等等。  
+ROM(Read Only Memory):只读存储器，只能通过特定的方式写入数据，断电之后不会消失，用来存放程序。
+
+</p>
+
+
+
+
+
+</div>
+      
+    </div><!-- .entry-content -->
+
+    <footer class="entry-meta">
     <a href="/2018/04/18/【嵌入式硬件】【单片机基础知识】单片机内部结构与原理/">
     <time datetime="2018-04-18T08:34:04.000Z" class="entry-date">
         2018-04-18
@@ -109,10 +163,24 @@
 
     </footer>
 </article>
-  
-  
-    </div></section>
-  
+
+
+    
+<nav class="nav-single">
+    <h3 class="assistive-text">文章导航</h3>
+    
+        <span class="nav-previous"><a href="/2018/04/19/study-list/" rel="prev"><span class="meta-nav">←</span> study-list</a></span>
+    
+    
+        <span class="nav-next"><a href="/2018/04/12/Work-Recording/" rel="next">工作任务安排与完成情况 <span class="meta-nav">→</span></a></span>
+    
+</nav><!-- .nav-single -->
+
+
+
+
+
+
 
 </div></div>
         <div id="secondary" class="widget-area" role="complementary">
