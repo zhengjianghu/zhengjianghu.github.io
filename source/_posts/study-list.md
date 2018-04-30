@@ -63,11 +63,15 @@ categories: 学习记录
 <li>WIFI模块及典型解决方案</li>
 <li>Zigbee模块及典型解决方案</li>
 <li>片外存储模块之Flash</li>
-
-
 </lu>
 
-
+<h2>测试</h2>
+<ul>
+<li>电磁兼容性</li>
+<li>RF</li>
+<li>EMC</li>
+<li>电路功耗与纹波测试</li>
+</ul>
 
 
 <h2>底层驱动开发  </h2>
@@ -77,9 +81,6 @@ categories: 学习记录
 <h2>产品研发相关</h2>
 <ul>
 <li>嵌入式产品开发流程与模型</li>
-<li>硬件产品的焊接与测试、调试汇总</li>
-<li>EMC电磁兼容性学习</li>
-<li>RF学习</li>
 </ul>
 
 

@@ -508,7 +508,7 @@ categories: 学习记录
 
 <tr class="alt">
 <td>江苏英索纳杭州研发中心</td>
-<td>2018-04-26</td>
+<td>2018-04-27</td>
 <td><img src="http://tse2.mm.bing.net/th?id=OIP.DmssU67MDBFH5n2mvc5mtwHaE7&w=300&h=300&p=0&o=5&pid=1.7" width="100" height="40"></td>
 <td><audio controls="controls" loop preload>
 <source src="http://up.mcyt.net/?down/39625.mp3" type="audio/mpeg">
@@ -535,9 +535,108 @@ categories: 学习记录
 <tr>
 <th colspan="4" > 备注：上午和中午忙着测试功耗，下午一直在看Web服务器的知识，整理了一部分博客。</th>
 </tr>
-<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1524844502368&di=79a4036f85d31f1b915c1aec0cdfce22&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2F7c1ed21b0ef41bd5732e30e95bda81cb39db3daa.jpg" alt="夜空" width="" height="" >
-
-
-
 
 </table>
+<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1524844502368&di=79a4036f85d31f1b915c1aec0cdfce22&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2F7c1ed21b0ef41bd5732e30e95bda81cb39db3daa.jpg" alt="夜空" width="" height="" > <br><br>
+
+
+
+<table id="customers">
+<tr>
+<th>Address</th>
+<th>Date</th>
+<th>Weather</th>
+<th>Daily Music</th>
+</tr>
+
+<tr class="alt">
+<td>江苏英索纳杭州研发中心</td>
+<td>2018-04-28</td>
+<td><img src="http://files.jb51.net/file_images/article/201709/20170914110114105.gif" width="100" height="40"></td>
+<td><audio controls="controls" loop preload>
+<source src="http://up.mcyt.net/?down/39154.mp3" type="audio/mpeg">
+</audio></td>
+</tr>
+
+<tr><th colspan="2"> Plan </th><th colspan="2"> Finished </th>
+</tr>
+<tr>
+<th colspan="2"> 学习Linux下的程序软件运行</th> <th colspan="2"> 50%</th>
+</tr>
+<tr>
+<th colspan="2" > 整理论文</th> <th colspan="2" > 0%</th>
+</tr>
+<tr>
+<th colspan="2" > 整理硬件测试笔记</th> <th colspan="2" > 50%</th>
+</tr>
+<tr>
+<th colspan="2" > 硬件日常学习之“单片机结构”</th> <th colspan="2"> 0%</th>
+</tr>
+<tr>
+<th colspan="2" > 软件日常学习之“TCP/IP”和C语言</th> <th colspan="2" > 0%</th>
+</tr>
+<tr>
+<th colspan="4" > 备注：早上请假，下午下班早去嘉兴</th>
+</tr>
+
+</table>
+<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1524917435357&di=5a1049fe7c4d9a853710fda142ff45de&imgtype=0&src=http%3A%2F%2Fimg3.dwstatic.com%2Fwww%2F1702%2F349966659785%2F1486011553522.jpg" alt="最终幻想">
+
+
+<table id="customers">
+<tr>
+<th> Address</th>
+<th> Date</th>
+<th> Weather</th>
+<th> Daily Music</th>
+</tr>
+
+<tr class="alt">
+<td> 江苏英索纳杭州研发中心</td>
+<td> 2018-04-30</td>
+<td>
+<img src="http://files.jb51.net/file_images/article/201709/20170914110114105.gif" width="100" height="40">
+</td>
+<td> <audio controls="controls" loop preload>
+<source src="http://up.mcyt.net/?down/30515.mp3" type=audio/mpeg>
+</audio> </td>
+<tr>
+<th colspan="2"> Plan </th>
+<th colspan="2"> Finished </th>
+</tr>
+
+<tr>
+<th colspan="2">修改个人博客相关 </th>
+<th colspan="2"> 100%（争取早日自己开发一个主题） </th>
+</tr>
+
+<tr>
+<th colspan="2"> 论文整理 </th>
+<th colspan="2"> 100%  </th>
+</tr>
+
+<tr>
+<th colspan="2"> Linux之Web服务 (学习)</th>
+<th colspan="2"> 20% </th>
+</tr>
+
+<tr>
+<th colspan="2"> Linux下各目录之/etc文件夹学习与如何设置开机启动项 （学习）</th>
+<th colspan="2">  0%</th>
+</tr>
+
+<tr>
+<th colspan="2"> 硬件日常学习之“单片机的时钟原理” </th>
+<th colspan="2"> 0% </th>
+</tr>
+
+<tr>
+<th colspan="2"> 软件日常学习之TCP/IP </th>
+<th colspan="2">  0%</th>
+</tr>
+<tr>
+<th colspan="4"> 备注：早上到得晚，下午还莫名被打扰 </th>
+</tr>
+</table>
+
+<img src="http://img2.ph.126.net/dp64TKpb0G8-oVogcGGvIw==/3860429305687080023.jpg" alt="渔舟唱晚" >
