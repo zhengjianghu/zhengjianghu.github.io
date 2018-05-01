@@ -640,3 +640,42 @@ categories: 学习记录
 </table>
 
 <img src="http://img2.ph.126.net/dp64TKpb0G8-oVogcGGvIw==/3860429305687080023.jpg" alt="渔舟唱晚" >
+
+
+<table id="customers">
+<tr>
+<th>Address</th>
+<th>Date</th>
+<th>Weather</th>
+<th>Daily Music</th>
+</tr>
+
+<tr class="alt">
+<td> 江苏英索纳杭州研发中心</td>
+<td> 2018-05-01</td>
+<td>
+<img src="http://files.jb51.net/file_images/article/201709/20170914110114105.gif" width="100" height="40">
+</td>
+<td><audio controls="controls" loop preload>
+<source src="http://up.mcyt.net/?down/39336.mp3" type="audio/mpeg">
+</audio>
+</td>
+</tr>
+
+<tr>
+<th colspan="2"> 论文字体调整 </th>
+<th colspan="2">  0%</th>
+</tr>
+
+<tr>
+<th colspan="2"> 硬件日常学习之“单片机的时钟原理”  </th>
+<th colspan="2">  0%</th>
+</tr>
+
+<tr>
+<th colspan="2">软件日常学习之TCP/IP </th>
+<th colspan="2"> 0%<th>
+</tr>
+
+
+</table>
