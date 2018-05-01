@@ -664,7 +664,7 @@ categories: 学习记录
 
 <tr>
 <th colspan="2"> 论文字体调整 </th>
-<th colspan="2">  0%</th>
+<th colspan="2">  50%</th>
 </tr>
 
 <tr>
@@ -677,5 +677,9 @@ categories: 学习记录
 <th colspan="2"> 0%<th>
 </tr>
 
-
+<tr>
+<th colspan="4">备注：自己瞎玩了</th>
+</tr>
 </table>
+
+<img src="http://img1.ph.126.net/Uo-tAHXT9XnQYvNySd1Mag==/149181737756950201.jpg" alt="乌镇">
