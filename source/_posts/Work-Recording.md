@@ -683,3 +683,45 @@ categories: 学习记录
 </table>
 
 <img src="http://img1.ph.126.net/Uo-tAHXT9XnQYvNySd1Mag==/149181737756950201.jpg" alt="乌镇">
+
+<table id="customers">
+<tr >
+<th> Address</th>
+<th> Date</th>
+<th> Weather</th>
+<th> Daily Music</th>
+</tr>
+
+<tr class="alt">
+<td> 江苏英索纳杭州研发中心</td>
+<td> 2018-05-02</td>
+<td>
+<img src="http://tse2.mm.bing.net/th?id=OIP.DmssU67MDBFH5n2mvc5mtwHaE7&w=300&h=300&p=0&o=5&pid=1.7" width="100" height="40" >
+</td>
+<td>
+<audio controls="controls" loop preload>
+<source src="http://up.mcyt.net/?down/45963.mp3" type="audio/mpeg">
+</audio></td>
+</tr>
+
+<tr>
+<th colspan="2">  Plan</th>
+<th colspan="2"> Finished</th>
+</tr>
+
+<tr>
+<th colspan="2">  论文</th>
+<th colspan="2"> 100% </th>
+</tr>
+
+<tr>
+<th colspan="2"> 测试视频拍摄</th>
+<th colspan="2">  0%</th>
+</tr>
+
+<tr>
+<th colspan="4"> 备注：专注于论文的修改 </th>
+</tr>
+</table>
+
+<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1525275225216&di=e4a4d4f94988b42f95d811f426a2ed5a&imgtype=0&src=http%3A%2F%2Fimg.mt-bbs.com%2Fforum%2F201501%2F20%2F213329n44bd0okdy8ddder.jpg" alt="木工艺">

@@ -104,6 +104,7 @@ categories: 学习记录
 <li>关于文件系统</li>
 <li>关于分区与挂载</li>
 <li>Cmake、makefile作用及其语法规则（GNU Make）</li>
+<li>文件完整性校验</li>
 <li>Shell脚本编程</li>
 <li>进程与线程</li>
 
