@@ -111,6 +111,7 @@ categories: 学习记录
 </ul>
 <h2>网络通信</h2>
 <ul>
+<li>局域网及IEEE 802</li>
 <li>HTTP</li>
 <li>TCP/IP(TCP/IP详解)</li>
 <li>Socket</li>

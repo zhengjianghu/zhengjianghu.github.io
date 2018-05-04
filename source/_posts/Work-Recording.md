@@ -725,3 +725,91 @@ categories: 学习记录
 </table>
 
 <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1525275225216&di=e4a4d4f94988b42f95d811f426a2ed5a&imgtype=0&src=http%3A%2F%2Fimg.mt-bbs.com%2Fforum%2F201501%2F20%2F213329n44bd0okdy8ddder.jpg" alt="木工艺">
+
+<table id="customers">
+<tr>
+<th> Address</th>
+<th> Date</th>
+<th> Weather</th>
+<th> Daily Music</th>
+</tr>
+
+<tr class="alt">
+<td> 江苏英索纳杭州研发中心</td>
+<td> 2018-05-03</td>
+<td>
+<img src="http://files.jb51.net/file_images/article/201709/20170914110114105.gif" width="100" height="40">
+</td>
+<td>
+<audio controls="controls" loop preload>
+<source src="http://up.mcyt.net/?down/45279.mp3" type=audio/mpeg>
+</audio>
+</td>
+</tr>
+
+<tr>
+<th colspan="2"> Plan</th>
+<th colspan="2"> Finished</th>
+</tr>
+
+<tr>
+<th colspan="2"> 修改论文</th>
+<th colspan="2"> 0%</th>
+</tr>
+
+<tr>
+<th colspan="2"> 视频拍摄准备</th>
+<th colspan="2"> 0%</th>
+</tr>
+
+<tr>
+<th colspan="4"> 备注：都是命</th>
+</tr>
+</table>
+
+<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1525350069267&di=d02993b44fe47acad6b560109289a920&imgtype=0&src=http%3A%2F%2Fh.hiphotos.baidu.com%2Fzhidao%2Fpic%2Fitem%2F4e4a20a4462309f7e770251f7a0e0cf3d7cad6a4.jpg" alt="" width="" height="">
+
+
+
+<table id="customers">
+<tr>
+<th> Address</th>
+<th> Date</th>
+<th> Weather</th>
+<th> Daily Music</th>
+</tr>
+
+<tr class="alt">
+<td> 江苏英索纳杭州研发中心</td>
+<td> 2018-05-04</td>
+<td>
+<img src="http://files.jb51.net/file_images/article/201709/20170914110114105.gif" width="100" height="40">
+</td>
+<td>
+<audio controls="controls" loop preload>
+<source src="http://up.mcyt.net/?down/43471.mp3" type=audio/mpeg>
+</audio>
+</td>
+</tr>
+
+<tr>
+<th colspan="2"> Plan</th>
+<th colspan="2"> Finished</th>
+</tr>
+
+<tr>
+<th colspan="2"> 准备资料、收集资料、带走资料</th>
+<th colspan="2"> 100%</th>
+</tr>
+
+<tr>
+<th colspan="2"> 作出论文目录、视频拍摄</th>
+<th colspan="2"> 0%</th>
+</tr>
+
+<tr>
+<th colspan="4"> 备注：生命不息、前进不止</th>
+</tr>
+</table>
+
+<img src="" alt="" width="" height="">
