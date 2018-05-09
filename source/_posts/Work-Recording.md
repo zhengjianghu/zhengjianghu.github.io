@@ -1,4 +1,4 @@
----
+ ---
 title: 工作任务安排与完成情况
 tags:
    - 任务
@@ -342,7 +342,8 @@ categories: 学习记录
 </audio></td>
 </tr>
 
-<tr><th colspan="2">Plan</th><th colspan="2" >Finished</th></tr>
+<tr>
+<th colspan="2">Plan</th><th colspan="2" >Finished</th></tr>
 
 <tr><th colspan="2">完成HTML和CSS的书写格式学习，修改hexo博客界面主题</th><th colspan="2">100%</th></tr>
 <tr><th colspan="2">论文完成软件的学习，并确定出测试方案</th><th colspan="2">0%</th></tr>
@@ -812,4 +813,140 @@ categories: 学习记录
 </tr>
 </table>
 
+<img src="http://imgstore.cdn.sogou.com/app/a/11220002/9324_pc.jpg" alt="雨" width="" height="">
+
+
+<table id="customers">
+<tr>
+<th> Address</th>
+<th> Date</th>
+<th> Weather</th>
+<th> Daily Music</th>
+</tr>
+
+<tr class="alt">
+<td> 浙江理工大学学生宿舍</td>
+<td> 2018-05-05</td>
+<td>
+<img src="http://p0.ifengimg.com/pmop/2017/0623/98DBA55E686E6F66A8BFE82B1BF49538DD57EF19_size990_w500_h363.gif" width="100" height="40">
+</td>
+<td>
+<audio controls="controls" loop preload>
+<source src="http://up.mcyt.net/?down/35254.mp3" type=audio/mpeg>
+</audio>
+</td>
+</tr>
+
+<tr>
+<th colspan="2"> Plan</th>
+<th colspan="2"> Finished</th>
+</tr>
+
+<tr>
+<th colspan="2"> 修改论文</th>
+<th colspan="2"> 0%</th>
+</tr>
+
+<tr>
+<th colspan="4"> 备注：</th>
+</tr>
+</table>
+
 <img src="" alt="" width="" height="">
+
+
+
+
+<table id="customers">
+<tr>
+<th> Address</th>
+<th> Date</th>
+<th> Weather</th>
+<th> Daily Music</th>
+</tr>
+
+<tr class="alt">
+<td> 浙江理工大学学生宿舍</td>
+<td> 2018-05-08</td>
+<td>
+<img src="http://p0.ifengimg.com/pmop/2017/0623/98DBA55E686E6F66A8BFE82B1BF49538DD57EF19_size990_w500_h363.gif" width="100" height="40">
+</td>
+<td>
+<audio controls="controls" loop preload>
+<source src="http://up.mcyt.net/?down/40184.mp3" type=audio/mpeg>
+</audio>
+</td>
+</tr>
+
+<tr>
+<th colspan="2"> Plan</th>
+<th colspan="2"> Finished</th>
+</tr>
+
+<tr>
+<th colspan="2"> 修改论文</th>
+<th colspan="2"> 80%</th>
+</tr>
+
+<tr>
+<th colspan="2"> 修改简历</th>
+<th> 0% </th>
+</tr>
+
+<tr>
+<th colspan="2"> 实习假申请书邮寄</th>
+<th colspan="2"> 100%   </th>
+</tr>
+
+<tr>
+<th colspan="4"> 备注：中午没忍住玩了一会游戏，晚上去了一趟图书馆</th>
+</tr>
+</table>
+
+<img src="http://i1.hdslb.com/bfs/archive/57e31e459d1eb70077690a5f73f9466052d41aaa.jpg" alt="" width="" height="">
+
+
+
+
+<table id="customers">
+<tr>
+<th> Address</th>
+<th> Date</th>
+<th> Weather</th>
+<th> Daily Music</th>
+</tr>
+
+<tr class="alt">
+<td> 浙江理工大学学生宿舍</td>
+<td> 2018-05-09</td>
+<td>
+<img src="http://files.jb51.net/file_images/article/201709/20170914110114105.gif" width="100" height="40">
+</td>
+<td>
+<audio controls="controls" loop preload>
+<source src="http://up.mcyt.net/?down/39058.mp3" type=audio/mpeg>
+</audio>
+</td>
+</tr>
+
+<tr>
+<th colspan="2"> Plan</th>
+<th colspan="2"> Finished</th>
+</tr>
+
+<tr>
+<th colspan="2"> 论文的剩余修改完</th>
+<th colspan="2"> 80%</th>
+</tr>
+
+<tr>
+<th colspan="2"> 修改简历</th>
+<th colspan="2"> 80% </th>
+</tr>
+
+<tr>
+<th colspan="4"> 备注：打扫了宿舍</th>
+</tr>
+</table>
+
+<img src="http://up.enterdesk.com/edpic_source/9c/8c/fa/9c8cfa685a092cce5cad594f04dc64a2.jpg" alt="" width="" height="">
