@@ -950,3 +950,178 @@ categories: 学习记录
 </table>
 
 <img src="http://up.enterdesk.com/edpic_source/9c/8c/fa/9c8cfa685a092cce5cad594f04dc64a2.jpg" alt="" width="" height="">
+
+
+
+
+<table id="customers">
+<tr>
+<th> Address</th>
+<th> Date</th>
+<th> Weather</th>
+<th> Daily Music</th>
+</tr>
+
+<tr class="alt">
+<td> 浙江理工大学学生宿舍</td>
+<td> 2018-05-10</td>
+<td>
+<img src="http://files.jb51.net/file_images/article/201709/20170914110114105.gif" width="100" height="40">
+</td>
+<td>
+<audio controls="controls" loop preload>
+<source src="http://up.mcyt.net/?down/38700.mp3" type=audio/mpeg>
+</audio>
+</td>
+</tr>
+
+<tr>
+<th colspan="2"> Plan</th>
+<th colspan="2"> Finished</th>
+</tr>
+
+<tr>
+<th colspan="2"> 论文的页眉页脚、文献</th>
+<th colspan="2"> 0%</th>
+</tr>
+
+<tr>
+<th colspan="2"> PPT制作</th>
+<th colspan="2"> 0% </th>
+</tr>
+
+<tr>
+<th colspan="2"> 作业</th>
+<th colspan="2"> 0%</th>
+</tr>
+
+<tr>
+<th colspan="4"> 备注：</th>
+</tr>
+</table>
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+
+<img src="http://img.pconline.com.cn/images/upload/upc/tx/wallpaper/1305/22/c0/21181740_1369193866786.jpg" alt="fdd" width="" height="">
+
+
+
+
+  <table id="customers">
+  <tr>
+  <th> Address</th>
+  <th> Date</th>
+  <th> Weather</th>
+  <th> Daily Music</th>
+  </tr>
+
+  <tr class="alt">
+  <td> 浙江理工大学学生宿舍</td>
+  <td> 2018-05-11</td>
+  <td>
+  <img src="http://files.jb51.net/file_images/article/201709/20170914110114105.gif" width="100" height="40">
+  </td>
+  <td>
+  <audio controls="controls" loop preload>
+  <source src="http://up.mcyt.net/?down/45000.mp3" type=audio/mpeg>
+  </audio>
+  </td>
+  </tr>
+
+  <tr>
+  <th colspan="2"> Plan</th>
+  <th colspan="2"> Finished</th>
+  </tr>
+
+  <tr>
+  <th colspan="2"> PPT做完</th>
+  <th colspan="2"> 50%</th>
+  </tr>
+
+  <tr>
+  <th colspan="4"> 备注:耽搁了一点</th>
+  </tr>
+  </table>
+
+  <img src="http://tgi1.jia.com/119/216/19216603.jpg" alt="满天星" width="" height="">
+
+
+
+
+<table id="customers">
+<tr>
+<th> Address</th>
+<th> Date</th>
+<th> Weather</th>
+<th> Daily Music</th>
+</tr>
+
+<tr class="alt">
+<td> 浙江理工大学学生宿舍</td>
+<td> 2018-05-12</td>
+<td>
+<img src="http://files.jb51.net/file_images/article/201709/20170914110114105.gif" width="100" height="40">
+</td>
+<td>
+<audio controls="controls" loop preload>
+<source src="http://up.mcyt.net/?down/45971.mp3" type=audio/mpeg>
+</audio>
+</td>
+</tr>
+
+<tr>
+<th colspan="2"> Plan</th>
+<th colspan="2"> Finished</th>
+</tr>
+
+<tr>
+<th colspan="2"> PPT做完</th>
+<th colspan="2"> 50%</th>
+</tr>
+
+<tr>
+<th colspan="4"> 备注: 中午做了别的事</th>
+</tr>
+</table>
+
+<img src=" http://i0.hdslb.com/bfs/archive/9951515b4a18858ab92fd783a9a2018127534777.png" alt="VN源计划" width="" height="">
+
+
+
+
+<table id="customers">
+<tr>
+<th> Address</th>
+<th> Date</th>
+<th> Weather</th>
+<th> Daily Music</th>
+</tr>
+
+<tr class="alt">
+<td> 浙江理工大学学生宿舍</td>
+<td> 2018-05-13</td>
+<td>
+<img src="http://files.jb51.net/file_images/article/201709/20170914110114105.gif" width="100" height="40">
+</td>
+<td>
+<audio controls="controls" loop preload>
+<source src="http://up.mcyt.net/?down/45946.mp3" type=audio/mpeg>
+</audio>
+</td>
+</tr>
+
+<tr>
+<th colspan="2"> Plan</th>
+<th colspan="2"> Finished</th>
+</tr>
+
+<tr>
+<th colspan="2"> PPT做完</th>
+<th colspan="2"> 50%</th>
+</tr>
+
+<tr>
+<th colspan="4"> 备注: 下午有一点浪费时间了</th>
+</tr>
+</table>
+
+<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1526230697541&di=654e8e14f202fa0ee1934a4bd227b7ba&imgtype=0&src=http%3A%2F%2Fd6.yihaodianimg.com%2FN00%2FM08%2F75%2F3C%2FCgMBmVMW2jyAAr5GAACKY0_1WlE46500.jpg " alt=" Nikon" width="" height="">
