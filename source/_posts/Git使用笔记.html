@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Git使用笔记</title>
+  </head>
+  <h2>Git使用笔记</h2>
+  <!--more-->
+  <body>
+  <h1>命令行优先</h1>
+
+
+  <h2>git stash</h2>
+  用来暂存修改，将其修改把保存到栈上
+  <ul>
+    <li>git stash save = git stash</li>
+    <li>git stash list：查看之前被储藏的应用</li>
+    <li>git stash apply XXX：将之前被储藏的工作重新应用起来</li>
+    <li>git stash drop XXX：移除某个储藏</li>
+    <li> git tash pop:应用该储藏并将其立即从栈上扔掉</li>
+  </ul>
+
+  <h2>git reset</h2>
+  版本恢复指令
+  <ul>
+    <li>git reset --hard：彻底回到某个版本，本地的源码也会变为上一个版本的内容 </li>
+    <li>git reset --soft：回退到某个版本，但是只回退了commit的信息，不会恢复到index file一级。</li>
+  </ul>
+
+
+
+
+
+
+
+
+  <h1>操作要求优先</h1>
+
+
+
+
+  <h1>Error集合</h1>
+  <h2>Git pull错误</h2>
+  <code>error: Your local changes to the following files would be overwritten by merge:
+    diploma project/毕业设计.docx
+    diploma project/遗留问题备注.docx
+    Please commit your changes or stash them before you merge. Aborting Updating d1b37b4..b187270
+  </code> <br>
+  原因：表明从服务器拉取的文件跟本地文件有重复，提示会否需要进行本地版本的保存。<br>
+  解决办法：(命令行含义在上面进行讲解) <br>
+  <ul>
+    <li>对本地文件进行版本保存然后再拉取</li>
+    <code>
+    git stash <br>
+    git pull <br>
+    git stash pop
+    </code>
+
+  <li>不保存直接覆盖</li>
+  <code>
+  git reset --hard <br>
+  git pull
+  </code>
+  </ul>
+
+
+
+
+
+  </body>
+</html>

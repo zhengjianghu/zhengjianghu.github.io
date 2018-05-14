@@ -1125,3 +1125,49 @@ categories: 学习记录
 </table>
 
 <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1526230697541&di=654e8e14f202fa0ee1934a4bd227b7ba&imgtype=0&src=http%3A%2F%2Fd6.yihaodianimg.com%2FN00%2FM08%2F75%2F3C%2FCgMBmVMW2jyAAr5GAACKY0_1WlE46500.jpg " alt=" Nikon" width="" height="">
+
+
+
+
+<table id="customers">
+<tr>
+<th> Address</th>
+<th> Date</th>
+<th> Weather</th>
+<th> Daily Music</th>
+</tr>
+
+<tr class="alt">
+<td> 江苏英索纳杭州研发中心</td>
+<td> 2018-05-13</td>
+<td>
+<img src="http://files.jb51.net/file_images/article/201709/20170914110114105.gif" width="100" height="40">
+</td>
+<td>
+<audio controls="controls" loop preload>
+<source src="http://up.mcyt.net/?down/40019.mp3" type=audio/mpeg>
+</audio>
+</td>
+</tr>
+
+<tr>
+<th colspan="2"> Plan</th>
+<th colspan="2"> Finished</th>
+</tr>
+
+<tr>
+<th colspan="2"> PPT做完</th>
+<th colspan="2"> 0%</th>
+</tr>
+
+<tr>
+<th colspan="2"> 创建“嵌入式ARM每日习题汇总” </th>
+<th colspan+"2"> 0% </th>
+</tr>
+
+<tr>
+<th colspan="4"> 备注: </th>
+</tr>
+</table>
+
+<img src=" " alt=" Nikon" width="" height="">
