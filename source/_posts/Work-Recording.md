@@ -1,9 +1,9 @@
  ---
 title: 工作任务安排与完成情况
 tags:
-   - 任务
-   - 学习
-   - 记录
+   -任务
+   -学习
+   -记录
 categories: 学习记录
 ---
 
@@ -1139,7 +1139,7 @@ categories: 学习记录
 
 <tr class="alt">
 <td> 江苏英索纳杭州研发中心</td>
-<td> 2018-05-13</td>
+<td> 2018-05-14</td>
 <td>
 <img src="http://files.jb51.net/file_images/article/201709/20170914110114105.gif" width="100" height="40">
 </td>
@@ -1157,17 +1157,68 @@ categories: 学习记录
 
 <tr>
 <th colspan="2"> PPT做完</th>
-<th colspan="2"> 0%</th>
+<th colspan="2"> 50%</th>
 </tr>
 
 <tr>
 <th colspan="2"> 创建“嵌入式ARM每日习题汇总” </th>
-<th colspan+"2"> 0% </th>
+<th colspan="2"> 0% </th>
 </tr>
 
 <tr>
-<th colspan="4"> 备注: </th>
+<th colspan="4"> 备注: 一切随缘</th>
 </tr>
 </table>
 
-<img src=" " alt=" Nikon" width="" height="">
+<img src=" http://pic.58pic.com/58pic/17/53/40/36H58PICqW5_1024.jpg" alt="夜空" width="" height="">
+
+
+<table id="customers">
+<tr>
+<th> Address</th>
+<th> Date</th>
+<th> Weather</th>
+<th> Daily Music</th>
+</tr>
+
+<tr class="alt">
+<td> 江苏英索纳杭州研发中心</td>
+<td> 2018-05-15</td>
+<td>
+<img src="http://files.jb51.net/file_images/article/201709/20170914110114105.gif" width="100" height="40">
+</td>
+<td>
+<audio controls="controls" loop preload>
+<source src="http://up.mcyt.net/?down/36487.mp3" type=audio/mpeg>
+</audio>
+</td>
+</tr>
+
+<tr>
+<th colspan="2"> Plan</th>
+<th colspan="2"> Finished</th>
+</tr>
+
+<tr>
+<th colspan="2"> PPT做完</th>
+<th colspan="2"> 100%</th>
+</tr>
+
+<tr>
+<th colspan="2"> 创建“嵌入式ARM每日习题汇总” </th>
+<th colspan="2"> 100% </th>
+</tr>
+
+<tr>
+<th colspan="2"> 测试视频拍摄 </th>
+<th colspan="2"> 0% </th>
+</tr>
+
+<tr>
+<th colspan="4"> 备注: 效率还是不错的</th>
+</tr>
+</table>
+
+<img src="http://pic1.win4000.com/wallpaper/0/568f20cd69efe.jpg " alt="青岛" width="" height="">
+
+<iframe src="https://www.html5tricks.com/demo/svg-css3-park-animation/index.html" width="200" height="200" frameborder="0" scrolling="no"></iframe>
