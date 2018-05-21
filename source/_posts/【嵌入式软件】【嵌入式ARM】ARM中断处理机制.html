@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ARM中断处理机制</title>
+  </head>
+  <h3>关于ARM的中断机制与处理过程</h3>
+  <!--more-->
+  <body>
+    <h1>一：ARM中断简介</h1>
+    <p>中断是处理器在处理主线任务时，面对来自外部或内部突发请求事件的一个处理程序。处理器不可能永远只
+    处理当前事件，它允许存在一种潜在的多情况请求机制，当发生该请求时，处理器将目前的主程序进度与状态进行保存，然后
+  跳转至中断程序请求地址处，然后再由该地址处的跳转指令或是通过对PC（程序计数器）的赋值，来转至自定义的中断服务程序处、，进行
+中断程序的执行，当执行完毕之后，再进行地址的返回，通过由程序员重新对PC进行赋值操作来返回到之前被打断的主程序处进行主程序的向下执行。
+</p>
+
+    <h1>二：中断分类</h1>
+    <h2>中断分类</h2>
+
+    <p>ARM处理器中共有7种中断请求，分别为：</p> <br>
+    <ul>
+      <li><h3>复位（reset）中断地址：0x00000000 &nbsp; 优先级=1</h3></li>
+        <p>由处理器的外部复位引脚有效时触发，中断处理程序跳转至复位异常程序处开始执行，复位中断异常通常由以下几种情况触发：系统上电、系统复位；</p>
+
+      <li><h3>未定义指令（undefined instructions） 中断地址：0x00000004  &nbsp; 优先级=6</h3></li>
+      <p>当ARM处理器认为当前指令属于未定义的指令时，触发该中断</p>
+
+      <li><h3>软中断（software interrupt SWI）中断地址：0x00000008 优先级=6</h3></li>
+      <p>由用户定义的中断指令，用于不同模式下的程序调用特权操作指令。在实时系统中可以通过该机制实现系统功能调用</p>
+
+      <li><h3>预取指令终止（Prefech Abort）中断地址：0x0000000C &nbsp;  优先级=5</h3></li>
+      <p>当处理器预取的指令的地址不存在，或者该指令的地址不允许被当前指令访问时触发该中断</p>
+
+      <li><h3>数据终止（Data bort）中断地址：0x00000010 &nbsp;  优先级=2</h3></li>
+      <p>当数据访问指令目标地址不存在时，或者该地址不允许被当前指令访问时，触发该中断</p>
+
+      <li><h3>中断（Inerrupt IRQ）中断地址：0x00000018 &nbsp; 优先级=4</h3></li>
+      <p>当处理器的外部中断引脚有效而且CPSR寄存器I控制位被使能时该中断被触发，系统中的各个外设通过该异常中断来请求处理服务</p>
+
+      <li><h3>快速外部中断（Fast Interrupt FIQ）中断地址：0x0000001c &nbsp;  优先级=3</h3></li>
+      <p>当处理器的外部中断引脚电平有效，而且CPSR寄存器的F控制位被使能时被触发</p>
+    </ul>
+
+    <h2>中断向量表</h2>
+    <p>中断向量表中表示了每一种中断的工作模式以及中断请求地址，每一个终端占用四个字节长度，在该地址中存放了一个跳转指令
+    或是一个向PC（Programm Counter 程序计数器）寄存器中赋值的数据访问语句，通过这两种指令，就可以将程序跳转至相应的异常中断程序处执行中断服务程序的执行。 <br>
+    注意：在中断向量地址处存放的并不是具体的由开发人员编写的中断服务程序，而是一个执行指向于由开发人员编写、存在于其他地方的具体服务程序的跳转指令，该指令可以是普通的跳转指令，
+    也可以是一个对PC的复制指令。</p>
+
+    <style type="text/css">
+    #table thead th {
+      background-color:rgb(81,130,187);
+      color: #fff;
+      border-buttom-width: 0;
+    }
+
+    #table td{
+      color: #000;
+    }
+
+    #table tr, #table th{
+      border-width: 1px;
+      border-style: solid;
+      border-color: rgb(81,130,187);
+    }
+
+    #table td, #table th{
+      padding: 5px, 10px;
+      font-size: 12px;
+      font-family: Verdana;
+      font-weight: bold;
+    }
+    </style>
+
+    <table id="table">
+      <thead>
+        <th>Exception Type</th>
+        <th>Mode</th>
+        <th>Normal address</th>
+        <th>High vector address</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Reset</td>
+          <td>Supervisor</td>
+          <td>0x00000000</td>
+          <td>0xFFFF0000</td>
+        </tr>
+        <tr>
+          <td>Undefined instructions</td>
+          <td>Undefined</td>
+          <td>0x00000004</td>
+          <td>0xFFFF0004</td>
+        </tr>
+        <tr>
+          <td>Software interrupt(SWI)</td>
+          <td>Supervisor</td>
+          <td>0x00000008</td>
+          <td>0xFFFF0008</td>
+        </tr>
+        <tr>
+          <td>Prefech Abort</td>
+          <td>Abort</td>
+          <td>0x0000000c</td>
+          <td>0x0000000c</td>
+        </tr>
+
+        <tr>
+          <td>Data Abort</td>
+          <td>Abort</td>
+          <td>0x00000010</td>
+          <td>0x00000010</td>
+        </tr>
+
+        <tr>
+          <td>IRQ(interrupt)</td>
+          <td>IRQ</td>
+          <td>0x00000018</td>
+          <td>0x00000018</td>
+        </tr>
+
+        <tr>
+          <td>FIQ(Fast interrupt)</td>
+          <td>FIQ</td>
+          <td>0x0000001c</td>
+          <td>0x0000001c</td>
+        </tr>
+      </tbody>
+    </table>
+
+
+
+
+
+
+    <h1>三：中断处理机制（CPU）</h1>
+
+
+
+
+
+
+
+
+    <h1>四：中断处理机制（程序员）</h1>
+
+  </body>
+</html>

@@ -1,4 +1,4 @@
- ---
+---
 title: 工作任务安排与完成情况
 tags:
    -任务
@@ -10,7 +10,7 @@ categories: 学习记录
 <h3>一个简单的日常学习任务与完成情况记录单，用来记录自己的成长历程与学习点滴，置顶且不定时更新(￣▽￣)／</h3>
 <!--more-->
 
-<style type=""text/css>
+<style type="text/css">
 #customers
 {
   font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
@@ -1258,7 +1258,7 @@ categories: 学习记录
 
 <tr>
 <th colspan="2"> “嵌入式ARM每日习题汇总” </th>
-<th colspan="2"> 0% </th>
+<th colspan="2"> 100% </th>
 </tr>
 
 <tr>
@@ -1267,8 +1267,58 @@ categories: 学习记录
 </tr>
 
 <tr>
-<th colspan="4"> 备注: </th>
+<th colspan="4"> 备注: 集中做了ARM习题的汇总</th>
 </tr>
 </table>
 
-<img src=" " alt="青岛" width="" height="">
+<img src="http://img.zcool.cn/community/016163554575fd0000019ae93e2c4f.jpg@2o.jpg " alt="成都" width="" height="">
+
+
+
+
+<table id="customers">
+<tr>
+<th> Address</th>
+<th> Date</th>
+<th> Weather</th>
+<th> Daily Music</th>
+</tr>
+
+<tr class="alt">
+<td> 江苏英索纳杭州研发中心</td>
+<td> 2018-05-21</td>
+<td> 阴雨</td>
+<td>
+<audio controls="controls" loop preload>
+<source src="http://up.mcyt.net/?down/37737.mp3" type=audio/mpeg>
+</audio>
+</td>
+</tr>
+
+<tr>
+<th colspan="2"> Plan</th>
+<th colspan="2"> Finished</th>
+</tr>
+
+<tr>
+<th colspan="2"> 论文交稿</th>
+<th colspan="2"> 100%</th>
+</tr>
+
+<tr>
+<th colspan="2"> “嵌入式ARM每日习题汇总” 学习</th>
+<th colspan="2"> 50% </th>
+</tr>
+
+<tr>
+<th colspan="2"> 硬件日常学习：“单片机晶振” </th>
+<th colspan="2"> 0% </th>
+</tr>
+
+<tr>
+<th colspan="4"> 备注: 无</th>
+</tr>
+</table>
+
+<img src=" " alt="成都" width="" height="">
+<iframe src="../动画/卡片/index.html" width="700" height="700" frameborder="0" scrolling="no"></iframe>
