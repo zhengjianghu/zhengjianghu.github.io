@@ -1322,3 +1322,58 @@ categories: 学习记录
 
 <img src=" " alt="成都" width="" height="">
 <iframe src="../动画/卡片/index.html" width="700" height="700" frameborder="0" scrolling="no"></iframe>
+
+
+
+
+
+<table id="customers">
+<tr>
+<th> Address</th>
+<th> Date</th>
+<th> Weather</th>
+<th> Daily Music</th>
+</tr>
+
+<tr class="alt">
+<td> 江苏英索纳杭州研发中心</td>
+<td> 2018-05-22</td>
+<td> 阴天</td>
+<td>
+<audio controls="controls" loop preload>
+<source src="http://up.mcyt.net/?down/45465.mp3" type=audio/mpeg>
+</audio>
+</td>
+</tr>
+
+<tr>
+<th colspan="2"> Plan</th>
+<th colspan="2"> Finished</th>
+</tr>
+
+<tr>
+<th colspan="2"> 搞完昨天的遗留问题</th>
+<th colspan="2"> 0%</th>
+</tr>
+
+<tr>
+<th colspan="2"> “嵌入式ARM每日习题汇总” 学习</th>
+<th colspan="2"> 0% </th>
+</tr>
+
+<tr>
+<th colspan="2"> 硬件日常学习：“单片机晶振” </th>
+<th colspan="2"> 0% </th>
+</tr>
+
+<tr>
+<th colspan="2"> 软件日常学习“TCP/IP”第一章总结</th>
+<th colspan="2"> 0% </th>
+</tr>
+
+<tr>
+<th colspan="4"> 备注: 无</th>
+</tr>
+</table>
+
+<img src=" " alt="成都" width="" height="">
