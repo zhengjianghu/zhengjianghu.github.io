@@ -25,7 +25,7 @@
 <meta property="og:site_name" content="Iblog">
 <meta property="og:description" content="嵌入式ARM每日三题集锦      嵌入式ARM每日三题集锦，厚积薄发">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-05-21T01:16:01.397Z">
+<meta property="og:updated_time" content="2018-05-22T12:47:57.956Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Iblog">
 <meta name="twitter:description" content="嵌入式ARM每日三题集锦      嵌入式ARM每日三题集锦，厚积薄发">
@@ -76,7 +76,7 @@
         
         <div class="comments-link">
             
-            <a href="javascript:void(0);" data-url="http://jianghublog.com/2018/05/15/嵌入式ARM每日三题集锦/" data-id="cjhg7c8k8000s24w9cpr7lwgi" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+            <a href="javascript:void(0);" data-url="http://jianghublog.com/2018/05/15/嵌入式ARM每日三题集锦/" data-id="cjhhoe1t7000iu8w9tcy0kscu" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -93,12 +93,30 @@
   <body>
     <h2>2018.05.15 &nbsp; 江苏英索纳杭州研发中心</h2>
     <h3>1：在ARM处理器中，快速中断（FIQ）与外界中断（IRQ）谁的优先级高？</h3>
+    <p>
+      Answer：FIQ。ARM的中断优先级从高到低依次为：一级Reset（复位）、二级Data Abort（DA）、三级FIQ、四级IRQ、五级Prefech Abort(PA)、
+      六级未定义指令中断和软中断。
+    </p>
+
     <h3>2：嵌入式系统由上到下主要分为那三层？</h3>
+    <p>Answer：应用软件层、系统软件层、硬件层</p>
+
     <h3>3：请简述DMA控制流程（请求信号HRQ）</h3>
+    <p>DMA:DMA(Direct Memory Access，直接内存存取) 是所有现代电脑的重要特色，它允许不同速度的硬件装置来沟通，而不需要依赖于 CPU 的大量中断负载。
+      否则，CPU 需要从来源把每一片段的资料复制到暂存器，然后把它们再次写回到新的地方。在这个时间中，CPU 对于其他的工作来说就无法使用。 <br>
+      Answer：DMA控制器向CPU请求总线使用权； <br>
+      CPU让出总线控制权（响应信号HLDA） <br>
+      DMA控制器控制总线，发总线命令，传送数据 <br>
+      DMA总线控制器归还总线控制权</p>
+
+
+
 
 
     <h2> 2018.05.20 &nbsp; 浙江理工大学学生生活二区</h2>
     <h3>1：算法的时间复杂度是指什么？ </h3>
+    <p>Answer：算法的时间复杂度是指执行算法所需要的计算工作量（所需的基本运算次数）</p>
+
     <h3>2：下列叙述中正确的是？ </h3>
     <ul>
     <li>A) 线性表是线性结构</li>
@@ -106,19 +124,39 @@
     <li>C) 线性链表是非线性结构</li>
     <li>D) 二叉树是线性结构</li>
     </ul>
+    <p>Answer：A <br>
+      一般将数据结构分为两大类型：线性结构与非线性结构。其中： <br>
+      <ul>
+        <li>线性结构：线性表、栈与队列、线性链表</li>
+        <li>非线性结构：二叉树</li>
+      </ul>
+     </p>
 
-    <h3>下面关于完全二叉树的叙述中，错误的是？</h3>、
+    <h3>3、下面关于完全二叉树的叙述中，错误的是？</h3>、
     <ul>
       <li>A) 除了最后一层外，每一层上的结点数均达到最大值</li>
       <li>B) 可能缺少若干个左右叶子结点</li>
       <li>C) 完全二叉树一般不是满二叉树</li>
       <li>D) 具有结点的完全二叉树的深度为[log2n]+1</li>
     </ul>
+    <p>
+      Answer: B
+      满二叉树指除最后一层外每层上所有结点都有两个子节点的二叉树。完全二叉树指除最后一层外，每一层上的结点数均达到最大值，在最后一层上只缺少右边的若干子结点（叶子结点）
+      的二叉树
+    </p>
+
+
+
+
+
+
+
+
 
     <h2> 2018.05.19 &nbsp; 浙江理工大学学生生活二区</h2>
-    <h3>CAN总线是指？</h3>
-    <h3>JTAG各引脚的作用是什么？</h3>
-    <h3>CISC与RISC的异同点是什么？</h3>
+    <h3>1、CAN总线是指？</h3>
+    <h3>2、JTAG各引脚的作用是什么？</h3>
+    <h3>3、CISC与RISC的异同点是什么？</h3>
 
     <h2>2018.05.18 &nbsp; 浙江理工大学学生生活二区</h2>
     <h3>解释main函数参数及其返回值，怎么获取main的返回值，有什么作用？</h3>
@@ -127,7 +165,7 @@
     <h3>程序<code>int fun(){
         a = 1,b=1,x;
         x=a+b;
-        return;  
+        return;
     }</code>
   有什么结果？如果能够编译的话，会返回数值吗？返回什么数值？</h3>
 
@@ -169,12 +207,12 @@
   <h2>2018.04.24 &nbsp; 江苏英索纳杭州研发中心</h2>
   <h3>ARM7属于什么架构？ARM9属于什么架构？</h3>
   <h3>在串行异步通讯中，发送端串口的TXD和接收端串口的（）相连接</h3>
-  
+
 
   <h2>2018.04.20 &nbsp; 江苏英索纳杭州研发中心</h2>
   <h3>ARM指令集是（）位宽，Thumb指令集是（）位宽</h3>
   <h3>ARM指令集是（）字节对齐，Thumb指令集是（）字节对其的</h3>
-  
+
 
   <h2>2018.04.17  &nbsp; 江苏英索纳杭州研发中心</h2>
   <h3>c和c++中的struct有什么不同？</h3>
@@ -223,7 +261,7 @@
   <h3>do...while和while...do有什么区别？</h3>
   <h3>
     <code>
-      #include<stdio.h>
+      #include <stdio.h>
       main()
       {
         int a,b,c,d;
@@ -248,7 +286,7 @@
   <h2>2018.04.2 &nbsp; 江苏英索纳杭州研发中心</h2>
   <h3>请问int *p 和char *p分别占几个字节？为什么？</h3>
   <h3>请简述sizeof与strlen的区别</h3>
-  
+
 
   <h2>2018.03.30 &nbsp; 江苏英索纳杭州研发中心</h2>
   <h3>在C语言库函数中将一个字符转成整型的函数是atol（）吗？这个函数的原型是什么？</h3>
@@ -262,7 +300,7 @@
     </code>
     请问p1+5=? p2+5=?
   </h3>
-  
+
 
   <h2>2018.03.29 &nbsp; 江苏英索纳杭州研发中心</h2>
   <h3>一个32位的机器，该机器的指针是多少位的？</h3>
@@ -292,7 +330,7 @@
   <h3>spinlock自旋锁是如何实现的？</h3>
   <h3>请简单介绍一下Linux中的信号量</h3>
 
-  
+
   <h2>2018.03.26 &nbsp; 江苏英索纳杭州研发中心</h2>
   <h3>请简述中断和DMA的区别</h3>
   <h3>中断和轮询哪个效率更高？怎样决定是采用中断方式还是采用轮询方式去实现驱动？</h3>
@@ -343,7 +381,7 @@
   <h2>2018.03.9 &nbsp; 江苏英索纳杭州研发中心</h2>
   <h3>
     <code>
-      #include<filename.h>
+      #include <filename.h>
     </filename.h></code>
     <code>
       #include "filename.h"
@@ -374,13 +412,13 @@
   <h2>2018.02.28 &nbsp; 江苏英索纳杭州研发中心</h2>
   <h3>嵌入式操作系统uC/OS-II、uCLinux、FreeRTOS?</h3>
   <h3>C语言中Struct和Union的区别？</h3>
-  
+
 
 
   <h2>2018.02.26 &nbsp; 江苏英索纳杭州研发中心</h2>
   <h3>简述实时系统的基本特性</h3>
   <h3>.h头文件中ifdef/define/endif的作用？</h3>
-  
+
 
   <h2>2018.02.8 &nbsp; 江苏英索纳杭州研发中心</h2>
   <h3>在大多数linux发行版本中，以下哪个属于块设备（block devices）？</h3>
@@ -477,14 +515,14 @@
     <li>C.算法执行过程中所需要的基本运算次数</li>
     <li>D.算法程序中的指令条数</li>
   </ul>
-  
+
 
 
   <h2>2018.01.25 &nbsp; 江苏英索纳杭州研发中心</h2>
   <h3>全局变量和局部变量在内存中是否有区别？如果有？是什么区别？</h3>
   <h3>堆栈溢出一般是由什么原因导致的？</h3>
   <h3>全局变量可不可以定义在可被多个.c文件包含的头文件中？为什么？</h3>
-  
+
 
 
   <h2>2018.01.24 &nbsp; 江苏英索纳杭州研发中心</h2>
@@ -513,7 +551,7 @@
   <h2>2018.01.10 &nbsp; 江苏英索纳杭州研发中心</h2>
   <h3>数组和链表有何区别？</h3>
   <h3>（void *）ptr 和（*（void**））ptr的结果是否相同？其中ptr为同一个指针</h3>
-  
+
 
 
   <h2>2018.01.3 &nbsp; 江苏英索纳杭州研发中心</h2>
@@ -538,8 +576,12 @@
   </h3>
 
 
+  <h2>1028.05.21 &nbsp; 江苏英索纳杭州研发中心</h2>
+  <h3>1、在C语言中，只用在使用时才占用内存单元的变量，其存储类型是？</h3>
+  <h3>2、全局变量、局部变量、静态全局变量、静态局部变量的区别和引用方式？</h3>
+  <h3>3、内存的分配方式有哪三种？请简单介绍一下</h3>
 
-  
+
 
 
 
@@ -609,6 +651,14 @@
       <ul>
         
           <li>
+            <a href="/2018/05/22/【嵌入式硬件】【电源】电源每日习题集锦/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2018/05/22/【嵌入式软件】【嵌入式ARM】ARM寄存器全集/">(no title)</a>
+          </li>
+        
+          <li>
             <a href="/2018/05/21/【嵌入式软件】【嵌入式ARM】ARM中断处理机制/">(no title)</a>
           </li>
         
@@ -618,14 +668,6 @@
         
           <li>
             <a href="/2018/05/15/居家布置/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2018/05/14/Git使用笔记/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2018/05/01/【嵌入式软件】【Linux】文件完整性检验/">(no title)</a>
           </li>
         
       </ul>

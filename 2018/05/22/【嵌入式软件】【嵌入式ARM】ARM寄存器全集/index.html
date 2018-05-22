@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <meta name="description" content="A Dreaming World" />
+  
+
+  
+  <meta name="keywords" content="Linux 嵌入式 博客 分享 摄影 学习" />
+  
+  
+  
+  
+  
+  
+  <title>Iblog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="ARM寄存器全集      对ARM全部寄存器的详细讲解">
+<meta name="keywords" content="Linux 嵌入式 博客 分享 摄影 学习">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Iblog">
+<meta property="og:url" content="http://jianghublog.com/2018/05/22/【嵌入式软件】【嵌入式ARM】ARM寄存器全集/index.html">
+<meta property="og:site_name" content="Iblog">
+<meta property="og:description" content="ARM寄存器全集      对ARM全部寄存器的详细讲解">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="http://img1.ph.126.net/ZtVWLys-Ut84XBgU_2zu3g==/6597866912588938927.jpg">
+<meta property="og:image" content="http://img2.ph.126.net/MuedHTXhrAWaomsDYu6Mpw==/2154972421797222890.jpg">
+<meta property="og:image" content="https://img-blog.csdn.net/20161028111234502">
+<meta property="og:image" content="https://img-blog.csdn.net/20161028111356250">
+<meta property="og:image" content="http://img2.ph.126.net/IGD79fIb0TXIU6_kuT6SAA==/6631710980005326386.jpg">
+<meta property="og:image" content="http://hi.csdn.net/attachment/201103/25/9670287_13010171363Gz5.jpg">
+<meta property="og:image" content="http://img0.ph.126.net/LVWvP7Psnh3cOZsjKUY_dg==/6631530660098274450.jpg">
+<meta property="og:updated_time" content="2018-05-22T10:34:21.623Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Iblog">
+<meta name="twitter:description" content="ARM寄存器全集      对ARM全部寄存器的详细讲解">
+<meta name="twitter:image" content="http://img1.ph.126.net/ZtVWLys-Ut84XBgU_2zu3g==/6597866912588938927.jpg">
+  
+  
+    <link rel="icon" href="/css/images/favicon.ico">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+  
+  <!-- baidu webmaster push -->
+  <script src='//push.zhanzhang.baidu.com/push.js'></script>
+</head>
+<body class="home blog custom-background custom-font-enabled single-author">
+  <div id="page" class="hfeed site">
+      <header id="masthead" class="site-header" role="banner">
+    <hgroup>
+      <h1 class="site-title">
+        <a href="/" title="Iblog" rel="home">Iblog</a>
+      </h1>
+      
+        <h2 class="site-description">
+          <a href="/" id="subtitle">Keep Hungry,Keep Fool!</a>
+        </h2>
+      
+    </hgroup>
+
+    <nav id="site-navigation" class="main-navigation" role="navigation">
+            <button class="menu-toggle">菜单</button>
+            <a class="assistive-text" href="/#content" title="跳至内容">跳至内容</a><!--TODO-->
+            <div class="menu-main-container">
+                <ul id="menu-main" class="nav-menu">
+                
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/">Home</a></li>
+                
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page"><a href="/archives">Archives</a></li>
+                
+                </ul>
+            </div>
+    </nav>
+</header>
+      <div id="main" class="wrapper">
+        <div id="primary" class="site-content"><div id="content" role="main"><article id="post-【嵌入式软件】【嵌入式ARM】ARM寄存器全集" class="post-【嵌入式软件】【嵌入式ARM】ARM寄存器全集 post type-post status-publish format-standard hentry">
+    <!---->
+
+      <header class="entry-header">
+        
+        <div class="comments-link">
+            
+            <a href="javascript:void(0);" data-url="http://jianghublog.com/2018/05/22/【嵌入式软件】【嵌入式ARM】ARM寄存器全集/" data-id="cjhhoe1tk000pu8w93wlu9cyu" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+        </div><!-- .comments-link -->
+      </header><!-- .entry-header -->
+
+    <div class="entry-content">
+      
+        <!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ARM寄存器全集</title>
+  </head>
+  <h3>对ARM全部寄存器的详细讲解</h3>
+  <a id="more"></a>
+  <body>
+    <h1>ARM寄存器总括</h1>
+    ARM中共有37个32位的寄存器，其中31个通用寄存器，6个程序状态寄存器。这些寄存器不能同时被访问，CPU可分为工作模式和异常模式，而工作模式又可分为不同的模式，异常模式也一样，
+    总之，在不同的工作模式下，有不同的寄存器被使用，但是各自模式下使用的寄存器的数量是一定的，即正常模式下17个（8个不分组通用的+7个分组通用的+1个PC寄存器+CPSR寄存器）,
+    异常模式下18个（额外：SPSR寄存器）。 <br>
+    具体的寄存器图示如下： <br>
+    <img src="http://img1.ph.126.net/ZtVWLys-Ut84XBgU_2zu3g==/6597866912588938927.jpg" alt="ARM寄存器">
+    <img src="http://img2.ph.126.net/MuedHTXhrAWaomsDYu6Mpw==/2154972421797222890.jpg" alt="ARM寄存器组成">
+    ARM处理器可分为工作模式与异常模式，在各自工作模式下用到的寄存器分别如下： <br>
+    <img src="https://img-blog.csdn.net/20161028111234502" alt="ARM状态下的寄存器">
+    <img src="https://img-blog.csdn.net/20161028111356250" alt="程序状态寄存器">
+    不分组通用寄存器：意味着在任何模式下都可以使用也必须要使用的寄存器，使用时访问的是同一物理寄存器。 <br>
+    分组通用寄存器：分组通用寄存器说明这些寄存器被用于不同的模式下，比如： <br>
+    用户/系统模式（正常模式）：R8~R14; <br>
+    FIQ模式：R8_FIQ~R14_FIQ <br>
+    IRQ模式：R13_IRQ、R14_IRQ; <br>
+    SVC模式：R13_SVC、R14_SVC; <br>
+    abt模式：R13_abt、R14_abt; <br>
+    UND模式：R13_UND、R14_UND; <br>
+
+    处理器可分为ARM访问状态和Thumb访问状态，这两种状态下，各自不同的工作模式其使用的寄存器又不同，可以概括如下： <br>
+    <img src="http://img2.ph.126.net/IGD79fIb0TXIU6_kuT6SAA==/6631710980005326386.jpg" alt="状态不同">
+
+
+
+    <h1>R13寄存器</h1>
+
+
+
+
+
+    <h1>R14链接寄存器（LR）</h1>
+    用来存放处理器发生异常时的PC的值，这样当异常处理结束后，就会重新将暂存其中的值返回给PC，方便处理器继续执行程序。但是要注意的是，在存放的时候并非是直接将PC的值进行复制，而是还要
+    经过处理，也就是异常的返回地址需要进行额外的操作，具体说明如下。 <br>
+    由于不同繁荣异常，其后续的处理机制的不同，使得PC的值指向的命令地址也不同，这就要求我们根据不同的异常情况，对异常返回地址在处理中断之前或者在处理完中断之后返回之前对返回地址进人为更改
+    才能保证在返回之后既不会重复执行主线的命令，也不会出现遗漏的问题。一般是在出现中断后，异常处理之前对返回地址根据不同的异常情况进行处理，然后保存在LR中，将来返回使用: <br>
+    <ul>
+      <li>复位异常</li>
+      不更改，原值保存和返回。 <br>
+      <li>未定义指令异常</li>
+      不更改，直接保存下一条指令的地址 <br>
+      <li>软中断异常</li>
+      不更改，直接保存下一条指令地址 <br>
+      <li>预取指令中止异常</li>
+      更改，当前中断指令地址+4 <br>
+      <li>数据中止</li>
+      更改，两种情况： <br>
+      如果需要重新访问数据：  当前中断指令地址-8 <br>
+      如果不需要重新保存数据：当前中断指令-4 <br>
+      <li>IRQ中断</li>
+      更改，下一条指令地址-4 <br>
+      <li>FIQ中断</li>
+      更改，下一条指令地址-4 <br>
+    </ul>
+    贴一段代码表示异常的处理过程：(FIQ中断为例) <br>
+    <code>
+      R14_fiq = address of next instruction to be executed + 4  <br>
+      SPSR_fiq = CPSR  <br>
+      CPSR[4:0] = 0B10001   /*Enter FIQ Mode*/  <br>
+      CPSR[5] = 0     /*Execute in ARM Mode*/  <br>
+      CPSR[6] = 1     /*Disable FIQ Interrupt*/  <br>
+      CPSR[7] = 1     /*Disable IRQ Interrupt*/  <br>
+      if high vectors confgured then   <br>
+          PC = 0xFFFF001C      /*Thumb模式*/  <br>
+        else   <br>
+          PC = 0x0000001C     /*ARM模式*/   <br>
+    </code> <br>
+    由上列代码可知，当发生异常时，R14会根据不同的异常情况来设置被存入LR的PC值。 <br>
+    更改地址的解释： <br>
+    ARM中指令之间相隔四个字节，但是PC的自动递增跨度为8个字节，因此当执行A指令时，PC的值已经指向了C指令的地址，面对这样的机制，LR通过本身的自动-4地址的调整机制，来保证
+    指令的顺序执行，这样一来，当处理器执行完A指令，指令地址从LR返回时，就变成了B指令的地址。但是面对异常中断，有些指令需要被重复执行或者指令地址有额外的增加，因此需要额外增加
+    调整指令，个异常模式的调整如下： <br>
+    1：软件中断 <br>
+    假如正常指令为A、B、C、D四条指令，当执行A指令的时候，A为异常指令，那么在这一条指令执行期间，PC的值仍然为C指令，只有当A被成功执行了完毕以后PC才指向D指令。但是由于A指令异常，
+    因此并没有执行完就触发了中断，按照正常情况，下一条指令应该是B指令，同时由于LR本身就具有-4字节的调整机制，因此PC的值刚好被指向B指令，因此这时不再额外对LR进行操作。 <br>
+    2：未定义指令中断 <br>
+    同软件中断 <br>
+    3：FIQ或者IRQ中断 <br>
+    因为这是来自外部的引脚中断，跟正在执行的A指令本身没有关系，因此就算此时触发了这两种中任意一种中断，也不能立马处理异常，要等A指令彻底执行完之后才可以中断，但在A指令被执行完毕的同时，
+    PC的值也被同时指向了D指令，而异常返回后下一条正常执行的指令是B指令，由D到B，相差8字节，LR本身只能处理4字节，因此，这里就需要通过对LR额外操作-4来保证返回B的地址，因此这种中断下
+    需要额外-4。<br>
+    4：预取指令异常 <br>
+    预取指令卖异常并不是执行该指令异常，而是得到的指令被标记为非法，理论上该指令仍然属于正常执行之后才触发的异常，因此，处理过程同上。 <br>
+    5：取数据异常 <br>
+    取数据异常和预取指令异常一样，属于指令被正常执行，但是结果非法（数据为空或者非法），此时有两种选择，要么重新取该数据，即重复执行该A指令，要么直接放弃，开始执行下一条B指令，当需要重新A指令
+    时，需要将PC的值由D调整到A，此时，LR本身-4，另外LR额外-8，怎样返回的指令的值才会指向A指令使其异常返回之后重新执行；当需要直接跳过时，同上一个异常处理，直接-4即可。 <br>
+
+
+
+
+
+    <h1>程序计数器（PC）</h1>
+
+
+
+
+
+
+    <h1>CPSR寄存器</h1>
+    CPSR寄存器（Current Program Statu Register）:当前程序状态寄存器，处理器在任何模式下都可以访问该寄存器，该寄存器包含了模式位、工作状态位、中断禁止位、保留位、、条件码标志位。
+    具体如下： <br>
+    <img src="http://hi.csdn.net/attachment/201103/25/9670287_13010171363Gz5.jpg" alt="CPSR寄存器">
+    模式位（0~4）：表示目前处理器处于什么模式，一般当进行不同模式的切换时，该模式也会被CPU自动改写，可选的有： <br>
+    <ul>
+      <li>0b10000：用户模式</li>
+      <li>0b10001：FIQ模式</li>
+      <li>0b10010：IRQ模式</li>
+      <li>0b10011：管理模式</li>
+      <li>0b10111：中止模式</li>
+      <li>0b11011:未定义模式</li>
+      <li>0b11111：系统模式</li>
+    </ul>
+    工作状态位： 表示处理器目前是哪种工作状态<br>
+    0：ARM模式 <br>
+    1：Thumb模式 <br>
+    FIQ中断禁止位： 只有该位被使能时，才可以触发FIQ中断，并且当已经触发FIQ或者复位中断时，必须要将该位禁止掉，只有当前的FIQ处理完之后才能恢复，响应下一次的FIQ中断
+    不可能在复位中断或者该FIQ中断正在被执行的同时在此触发该中断，这是不被允许的。但是当发生其他异常时，该位不能被禁止，因为该中断优先级仅次于复位异常，当正在响应其他异常期间如果该FIQfieldset
+    异常被触发，则由于优先级的原因，之前的异常被搁置，转至处理该异常，这是被允许的。<br>
+    0:允许 <br>
+    1：禁止 <br>
+    IRQ中断禁止位：只有该位被使能时，才可以出发IRQ中断，并且因为其中断优先级不高，因此当发生任何异常时，该位都应该被禁止掉。 <br>
+    0：允许 <br>
+    1：禁止 <br>
+    保留位：8~27，用于ARM版本的扩展 <br>
+    条件码标志位：它们的值可被算数或路基运算的结果所改变，并且可以决定某条指令是否被执行，各自的具体含义如下： <br>
+    <img src="http://img0.ph.126.net/LVWvP7Psnh3cOZsjKUY_dg==/6631530660098274450.jpg" alt="条件码标志位"> <br>
+    CPSR寄存器所有的相关动作都是由CPU自动完成的。 <br>
+
+
+
+
+
+    <h1>SPSR寄存器</h1>
+    SPSR寄存器（Saved Program Status Register):程序状态保存寄存器，用来保存当处理器异常发生，需要做异常处理时的CPSR的状态，以便在异常处理结束后返回异常处理时的工作状态，让处理器
+    回归到正常的主线任务。两个寄存器之间的值的保存与回传都由CPU使用MRS(从程序状态寄存器到通用寄存器)和MSR（从通用寄存器到程序状态寄存器）自动完成。 <br>
+
+
+
+
+  </body>
+</html>
+
+      
+    </div><!-- .entry-content -->
+
+    <footer class="entry-meta">
+    <a href="/2018/05/22/【嵌入式软件】【嵌入式ARM】ARM寄存器全集/">
+    <time datetime="2018-05-22T03:18:14.206Z" class="entry-date">
+        2018-05-22
+    </time>
+</a>
+    
+    
+    </footer>
+</article>
+
+
+    
+<nav class="nav-single">
+    <h3 class="assistive-text">文章导航</h3>
+    
+        <span class="nav-previous"><a href="/2018/05/22/【嵌入式硬件】【电源】电源每日习题集锦/" rel="prev"><span class="meta-nav">←</span> (no title)</a></span>
+    
+    
+        <span class="nav-next"><a href="/2018/05/21/【嵌入式软件】【嵌入式ARM】ARM中断处理机制/" rel="next">(no title) <span class="meta-nav">→</span></a></span>
+    
+</nav><!-- .nav-single -->
+
+
+
+
+
+
+
+</div></div>
+        <div id="secondary" class="widget-area" role="complementary">
+  
+    <aside id="search" class="widget widget_search"><form role="search" method="get" accept-charset="utf-8" id="searchform" class="searchform" action="//google.com/search">
+    <div>
+        <input type="text" value="" name="s" id="s" />
+        <input type="submit" id="searchsubmit" value="搜索" />
+    </div>
+</form></aside>
+  
+    
+  
+    
+  <aside class="widget">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget-content">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/学习记录/">学习记录</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/嵌入式硬件/">嵌入式硬件</a><span class="category-list-count">1</span></li></ul>
+    </div>
+  </aside>
+
+  
+    
+  <aside class="widget">
+    <h3 class="widget-title">Recents</h3>
+    <div class="widget-content">
+      <ul>
+        
+          <li>
+            <a href="/2018/05/22/【嵌入式硬件】【电源】电源每日习题集锦/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2018/05/22/【嵌入式软件】【嵌入式ARM】ARM寄存器全集/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2018/05/21/【嵌入式软件】【嵌入式ARM】ARM中断处理机制/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2018/05/15/嵌入式ARM每日三题集锦/">(no title)</a>
+          </li>
+        
+          <li>
+            <a href="/2018/05/15/居家布置/">(no title)</a>
+          </li>
+        
+      </ul>
+    </div>
+  </aside>
+
+  
+    
+  <aside class="widget">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget-content">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/任务-学习-记录/">-任务 -学习 -记录</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/前后端/">前后端</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/单片机/">单片机</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/嵌入式/">嵌入式</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/电路/">电路</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/硬件/">硬件</a><span class="tag-list-count">2</span></li></ul>
+    </div>
+  </aside>
+
+  
+    
+  <aside class="widget">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget-content tagcloud">
+      <a href="/tags/任务-学习-记录/" style="font-size: 10px;">-任务 -学习 -记录</a> <a href="/tags/前后端/" style="font-size: 10px;">前后端</a> <a href="/tags/单片机/" style="font-size: 10px;">单片机</a> <a href="/tags/嵌入式/" style="font-size: 10px;">嵌入式</a> <a href="/tags/电路/" style="font-size: 10px;">电路</a> <a href="/tags/硬件/" style="font-size: 20px;">硬件</a>
+    </div>
+  </aside>
+
+  
+</div>
+      </div>
+      <footer id="colophon" role="contentinfo">
+    <p>&copy; 2018 江湖
+    All rights reserved.</p>
+    <p>Powered by <a href="http://hexo.io/" target="_blank">Hexo</a></p>
+</footer>
+    <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"1","bdMiniList":false,"bdPic":"","bdStyle":"2","bdSize":"16"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+
+<script src="/js/jquery-2.0.3.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+<script src="/js/navigation.js"></script>
+
+<div id="bg"></div>
+
+  </div>
+</body>
+</html>
