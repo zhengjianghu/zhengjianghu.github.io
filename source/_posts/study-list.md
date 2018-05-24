@@ -165,3 +165,20 @@ categories: 学习记录
 <h2>数据库</h2>
 <h2>JAVA    </h2>
 <h2>Ruby</h2>
+
+
+
+
+<h1>文档翻译</h1>
+<h2>ARM</h2>
+<ul>
+<li>M3</li>
+<li>A7</li>
+<li>A9</li>
+</ul>
+
+<h2>STM32</h2>
+<h3>STM32F10xxx</h3>
+
+
+<h2>Atmel</h2>

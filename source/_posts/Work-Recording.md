@@ -1376,4 +1376,123 @@ categories: 学习记录
 </tr>
 </table>
 
+<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1527643167&di=439e34a38eda78f0f2aba9a5d44f998a&imgtype=jpg&er=1&src=http%3A%2F%2Fi1.img.969g.com%2Fsy%2Fimgx2016%2F08%2F26%2F495_151206_9e7a0_lit.jpg" alt="成都" width="" height="">
+
+
+
+
+
+
+<table id="customers">
+<tr>
+<th> Address</th>
+<th> Date</th>
+<th> Weather</th>
+<th> Daily Music</th>
+</tr>
+
+<tr class="alt">
+<td> 江苏英索纳杭州研发中心</td>
+<td> 2018-05-23</td>
+<td> 阴天</td>
+<td>
+<audio controls="controls" loop preload>
+<source src="http://up.mcyt.net/?down/39597.mp3" type=audio/mpeg>
+</audio>
+</td>
+</tr>
+
+<tr>
+<th colspan="2"> Plan</th>
+<th colspan="2"> Finished</th>
+</tr>
+
+<tr>
+<th colspan="2"> 搞完ARM中断问题</th>
+<th colspan="2"> 0%</th>
+</tr>
+
+<tr>
+<th colspan="2"> “嵌入式ARM每日习题汇总” 学习</th>
+<th colspan="2"> 0% </th>
+</tr>
+
+<tr>
+<th colspan="2"> 硬件日常学习：“单片机晶振” </th>
+<th colspan="2"> 0% </th>
+</tr>
+
+<tr>
+<th colspan="2"> 软件日常学习“TCP/IP”第一章总结</th>
+<th colspan="2"> 0% </th>
+</tr>
+
+<tr>
+<th colspan="4"> 备注: 无</th>
+</tr>
+</table>
+
+<img src=" " alt="成都" width="" height="">
+
+
+
+
+
+
+
+<table id="customers">
+<tr>
+<th> Address</th>
+<th> Date</th>
+<th> Weather</th>
+<th> Daily Music</th>
+</tr>
+
+<tr class="alt">
+<td> 江苏英索纳杭州研发中心</td>
+<td> 2018-05-24</td>
+<td> 阴天</td>
+<td>
+<audio controls="controls" loop preload>
+<source src="http://up.mcyt.net/?down/47000.mp3" type=audio/mpeg>
+</audio>
+</td>
+</tr>
+
+<tr>
+<th colspan="2"> Plan</th>
+<th colspan="2"> Finished</th>
+</tr>
+
+<tr>
+<th colspan="2"> 硬件日常学习：“单片机晶振” </th>
+<th colspan="2"> 100% </th>
+</tr>
+
+<tr>
+<th colspan="2">SMT封装解读</th>
+<th colspan="2"> 0% </th>
+ </tr>
+
+
+<tr>
+<th colspan="2"> “嵌入式ARM每日习题汇总” 学习</th>
+<th colspan="2"> 0% </th>
+</tr>
+
+<tr>
+<th colspan="2"> 电源每日习题 </th>
+<th colspan="2"> 0% </th>
+</tr>
+
+<tr>
+<th colspan="2"> 软件日常学习“TCP/IP”第一章总结</th>
+<th colspan="2"> 0% </th>
+</tr>
+
+<tr>
+<th colspan="4"> 备注: 没有学习SMT，而是学习了复位电路，还没学习完</th>
+</tr>
+</table>
+
 <img src=" " alt="成都" width="" height="">
