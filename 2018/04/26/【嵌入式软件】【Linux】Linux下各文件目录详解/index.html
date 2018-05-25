@@ -25,7 +25,7 @@
 <meta property="og:site_name" content="Iblog">
 <meta property="og:description" content="Linux下各文件目录详解      对Liunx下的各个文件夹以及文件进行一个简单的整理与作用说明。">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-05-14T03:47:21.274Z">
+<meta property="og:updated_time" content="2018-05-25T06:25:13.431Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Iblog">
 <meta name="twitter:description" content="Linux下各文件目录详解      对Liunx下的各个文件夹以及文件进行一个简单的整理与作用说明。">
@@ -76,7 +76,7 @@
         
         <div class="comments-link">
             
-            <a href="javascript:void(0);" data-url="http://jianghublog.com/2018/04/26/【嵌入式软件】【Linux】Linux下各文件目录详解/" data-id="cjhkiq6li000ee0w9p2gswt97" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+            <a href="javascript:void(0);" data-url="http://jianghublog.com/2018/04/26/【嵌入式软件】【Linux】Linux下各文件目录详解/" data-id="cjhlmlffq0009pow9a7cn6fxr" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -102,6 +102,24 @@
     <h2>/tmp</h2>
     <h2>/boot</h2>
     <h2>/etc</h2>
+    <p>
+      /etc目录用来存放系统中个应用程序或软件工具的、格式为.config的配置文件。通过编辑这些
+      配置文件就可以对系统和各软件进行更改和管理。 <br> <br>
+      有些安装的软件的默认配置文件不放在此处，有可能是其他的目录，为了便于管理，可以对他们的别的目录下的
+      配置文件进行软链接，将其链接至统一的/etc目录下，这样就以后就可以直接在/etc目录下进行更改，会同步到其本来的
+      目录文件中，命令如下：(假如程序app的配置文件app.config被存放在/var/app下) <br>
+      ln -s /var/app/app.config  /etc/app.config <br>
+      以后再修改该软件的配置就可以只用配置/etc/app.config就可以了 <br>
+
+
+
+
+
+    </p>
+
+
+
+
     <h2>/lib</h2>
     <h2>/media</h2>
     <h2>/opt</h2>
@@ -205,6 +223,10 @@
       <ul>
         
           <li>
+            <a href="/2018/05/25/【嵌入式软件】【Linux】Linux设置程序开机自动运行/">(no title)</a>
+          </li>
+        
+          <li>
             <a href="/2018/05/22/【嵌入式硬件】【电源】电源每日习题集锦/">(no title)</a>
           </li>
         
@@ -218,10 +240,6 @@
         
           <li>
             <a href="/2018/05/15/嵌入式ARM每日三题集锦/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2018/05/15/居家布置/">(no title)</a>
           </li>
         
       </ul>

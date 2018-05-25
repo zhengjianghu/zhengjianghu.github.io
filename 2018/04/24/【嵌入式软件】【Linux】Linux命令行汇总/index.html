@@ -25,7 +25,7 @@
 <meta property="og:site_name" content="Iblog">
 <meta property="og:description" content="Linux命令行学习笔记      按照Linux系统的不同模块划分，对各模块进行一个简单的命令行介绍，方便日后快速查询！">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-05-14T03:47:21.281Z">
+<meta property="og:updated_time" content="2018-05-25T04:38:15.689Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Iblog">
 <meta name="twitter:description" content="Linux命令行学习笔记      按照Linux系统的不同模块划分，对各模块进行一个简单的命令行介绍，方便日后快速查询！">
@@ -76,7 +76,7 @@
         
         <div class="comments-link">
             
-            <a href="javascript:void(0);" data-url="http://jianghublog.com/2018/04/24/【嵌入式软件】【Linux】Linux命令行汇总/" data-id="cjhkiq6lm000ie0w959yihazg" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+            <a href="javascript:void(0);" data-url="http://jianghublog.com/2018/04/24/【嵌入式软件】【Linux】Linux命令行汇总/" data-id="cjhlmlffu000dpow9i0jyobma" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
@@ -97,11 +97,27 @@
     <cite>备注: <br>
       基础的命令行可能不会被收录进来 <br>
     有些命令行的具体参数不一定齐全，只列了典型参数，详细请“男人”</cite>
+    <style type="text/css">
+    #body_background_h2 h2 {
+      background: #2d2d2d;
+      color: #fff;
+    }
+    #body_common h2 {
+      font-size: 16px;
+      display: table;
+      padding: 5px 8px;
+    }
+
+
+    </style>
+
+
+
     <h1>Shell设置</h1><br>
 
 
 
-    <h1>文件与目录管理</h1>
+    <h1>文件与目录管理</h1> <br>
 
 
 
@@ -128,7 +144,7 @@
   语法：
   <blockquote> chmod (选项) （参数） </blockquote>
   <br>
-  
+
 
 </p>
 
@@ -136,14 +152,14 @@
 
 
 
-    <h1>压缩指令与查找系统</h1>
+    <h1>压缩指令与查找系统</h1> <br>
 
 
 
 
 
 
-    <h1>硬盘管理</h1>
+    <h1>硬盘管理</h1> <br>
     <h2>df指令</h2>
     <p>df指令用来检查文件系统的磁盘占用情况。<br>
       <ul>
@@ -166,7 +182,7 @@
 
 
 
-    <h1>用户管理</h1>
+    <h1>用户管理</h1> <br>
 
 
 
@@ -175,7 +191,7 @@
 
 
 
-    <h1>用户磁盘配额</h1>
+    <h1>用户磁盘配额</h1> <br>
 
 
 
@@ -184,7 +200,78 @@
 
 
 
-    <h1>进程管理与作业调度</h1>
+    <h1>进程管理与作业调度</h1> <br>
+    <h2>ps指令</h2>
+    <p>
+    ps：用于报告、查看当前系统的进程状态。可以搭配kill指令随时中断、删除不必要的程序。
+    使用该系统可以确定有哪些进程正在运行和运行的状态、进程是否结束、进程有没有僵死、哪些进程占用了多少资源等等。 <br>
+    语法：ps [选项] <br>
+    部分参数如下： <br>
+    <ul>
+      <li>-A：显示所有程序</li>
+      <li>-a：显示所有终端机下执行的程序，除了阶段作业领导者之外</li>
+      <li>a：显示现行终端机下的所有程序，包括其他用户的程序</li>
+      <li>-c：显示CLS和PRI栏位</li>
+    </ul>
+    ps的一种典型用法： <br>
+    ps -ef |grep XXX ：使用全局正则表达式grep搜索工具来查找某个进程，并打印该进程的相关进程号等信息。 <br>
+    其他的参数可根据具体情况自行查询 <br>
+    </p>
+
+    <h2>kill</h2>
+    <p>
+    kill：暂停或结束某个进程。kill并不是一个命令，而是一系列命令的一个总称，他的一系列命令称为信号，
+     kill有一系列子指令，这些子指令叫做信号，分别有暂停、终止等操作。使用的时候遵循kill+信号+进程号的格式，
+     对某个进程实施某个操作。<br>
+    语法：kill （选型）（参数） <br>
+    具体选项： <br>
+    <ul>
+      <li>-a：当处理当前进程时，不限制命令和进程号的对应关系</li>
+      <li>-l：&lt; 信息编号 &gt; ：若不加该选项，则-l参数会列出全部的信息名称  </li>
+      <li>-p：指定kill命令只打印相关进程的进程号，而不发送任何信号</li>
+      <li>-u：指定用户</li>
+    </ul>
+    参数： 进程或作业识别号：指定要删除的进程或作业 <br>
+    查看全部的kill信号： kill -l <br>
+    一般常用的有： <br>
+    具体信号 &nbsp; 信号代码（一般是使用信号代码，而不是具体的信号名称） &nbsp; 解释 <br>
+    <ul>
+      <li>HUP 1 终端断线 </li>
+      <li>INT 2  中断（同Ctrl + C）</li>
+      <li>QUIT 3 退出（同Ctrl + \） </li>
+      <li>TERM 15 终止</li>
+      <li>KILL 9 强制终止 </li>
+      <li>CONT 18 继续 （与STOP相反）</li>
+      <li>STOP 19 暂停（Ctrl + Z）</li>
+    </ul>
+    如若没有指定用哪种信号，则一般会默认是-9（KILL），而且系统处理的时候，只有第九种信号（SIGKILL）才可以无条件终止进程，对于其他信号，
+    进程们都有权利忽略。 <br>
+    kill一般和ps搭配使用，先对某个进程的进程号进行查询，然后将该程序杀死： <br>
+    查找某个进程的进程号： ps -ef |grep XXX <br>
+    杀死该进程： kill -9 ZZZ
+
+    </p>
+
+    <h2>top指令</h2>
+    <p>
+    top命令：可以实时动态的查看系统的整体运行情况。通过top命令提供的互动式交互界面，
+    用热键可以管理。 <br>
+    语法：top （选项） <br>
+    选项： <br>
+    <ul>
+      <li>-b：以批处理模式处理</li>
+      <li>-c：显示完整的治命令</li>
+      <li>-d：屏幕刷新间隔时间；</li>
+      <li>-I：忽略失效过程；</li>
+      <li>-s：保密模式；</li>
+      <li>-S：累积模式；</li>
+      <li>-i&lt;时间&gt;：设置间隔时间</li>
+      <li>-p&lt;进程号&gt;：指定进程；</li>
+      <li>-n&lt;次数&gt;：循环显示的次数。</li>
+    </ul>
+    具体交互命令可自行查询  <br>
+
+    </p>
 
 
 
@@ -192,7 +279,7 @@
 
 
 
-    <h1>网络管理</h1>
+    <h1>网络管理</h1> <br>
 
 
 
@@ -263,6 +350,10 @@
       <ul>
         
           <li>
+            <a href="/2018/05/25/【嵌入式软件】【Linux】Linux设置程序开机自动运行/">(no title)</a>
+          </li>
+        
+          <li>
             <a href="/2018/05/22/【嵌入式硬件】【电源】电源每日习题集锦/">(no title)</a>
           </li>
         
@@ -276,10 +367,6 @@
         
           <li>
             <a href="/2018/05/15/嵌入式ARM每日三题集锦/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2018/05/15/居家布置/">(no title)</a>
           </li>
         
       </ul>
