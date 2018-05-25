@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Linux开机程序自动运行</title>
+  </head>
+  <h3>关于如何设置Linux相关程序开机自动运行</h3>
+  <!--more-->
+  <body>
+    <h1 align="center"> Linux开机自动运行程序</h1>
+    <h2>Linux开机启动过程</h2>
+    <ol>
+      <li><font size="5">BIOS</font></li>
+      硬件检测，检查CPU和内存、由于在BIOS中存储了各磁盘的启动顺序，因此BIOS会按照启动顺序依次在各个盘中查找
+      MBR信息，找到之后并将其加载到内存中，之后控制权转交给Boot Loader程序. <br>
+      <li><font size="5">MBR</font></li>
+      MBR(Master Boot Record)：主引导记录，存储Boot Loader程序，开始加载GRUB<br>
+      <li><font size="5">GRUB</font></li>
+      GRUB(Grand Unified Bootloader)：多系统启动程序，主要工作有三步：step1加载查找第二段Bootloader程序（就是step2）、step2识别文件系统
+      、step3查找并加载Kernel的信息，然后把控制权交给Kernel。 <br>
+      <li> <font size="5"> Kernel </font> </li>
+      Kernel：内核。将Kernel读进内存并将压缩形式的Kernel进行解压，从之前就被加载进内存中的根文件系统initrd文件中加载驱动模块，完毕之后将initrd删除。
+      挂载完根文件系统后，开始装载第一个进程，执行/sbin/init，之后将控制权交给init程序。 <br>
+      <li> <font size="5">  Init </font> </li>
+      Init：OS的初始化操作。该初始化并不是直接执行一个叫做init的文件，而是根据/etc/inittab（定义了系统默认运行级别）设定的动作进行脚本的执行，而在
+      这其中，第一个被执行的脚本为/etc/rc.d/rc.sysinit，这个才是真正的OS初始化脚本。  <br>
+      执行完毕后，根据配置的启动级别，执行对应目录下的脚本，最后执行/etc/rc.d/rc.local这个脚本，至此，系统启动完成。
+    </ol>
+    示意图如下： <br>
+    <img src="http://img1.ph.126.net/OVDXooaENZxVocQxyirdXA==/2601391734780124942.jpg" alt="开机启动程序">
+
+
+    <h2>Linux运行级别</h2>
+
+
+
+
+
+    <h2>设置方法一</h2>
+
+
+
+
+
+    <h2>设置方法二</h2>
+
+
+
+
+
+
+
+  </body>
+</html>

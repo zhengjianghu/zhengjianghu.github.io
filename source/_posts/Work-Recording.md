@@ -1496,3 +1496,59 @@ categories: 学习记录
 </table>
 
 <img src=" " alt="成都" width="" height="">
+
+
+
+
+
+
+<table id="customers">
+<tr>
+<th> Address</th>
+<th> Date</th>
+<th> Weather</th>
+<th> Daily Music</th>
+</tr>
+
+<tr class="alt">
+<td> 江苏英索纳杭州研发中心</td>
+<td> 2018-05-25</td>
+<td> 阴天</td>
+<td>
+<audio controls="controls" loop preload>
+<source src=" " type=audio/mpeg>
+</audio>
+</td>
+</tr>
+
+<tr>
+<th colspan="2"> Plan</th>
+<th colspan="2"> Finished</th>
+</tr>
+
+<tr>
+<th colspan="2"> 硬件日常学习：“复位电路” </th>
+<th colspan="2"> 0% </th>
+</tr>
+
+<tr>
+<th colspan="2"> Linux几个命令汇总 </th>
+<th colspan="2"> 100%  </th>
+</tr>
+
+<tr>
+<th colspan="2"> “嵌入式ARM每日习题汇总” 和“电源每日习题”添加</th>
+<th colspan="2"> 100% </th>
+</tr>
+
+<tr>
+<th colspan="2">SMT封装解读</th>
+<th colspan="2"> 0% </th>
+</tr>
+
+<tr>
+<th colspan="4"> 备注: 没有学习SMT，而是学习了复位电路，还没学习完</th>
+</tr>
+</table>
+
+<img src=" " alt=" " width="" height="">
