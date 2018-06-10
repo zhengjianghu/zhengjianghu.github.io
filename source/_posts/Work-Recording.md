@@ -1552,3 +1552,179 @@ categories: 学习记录
 </table>
 
 <img src=" " alt=" " width="" height="">
+
+
+
+
+
+<table id="customers">
+<tr>
+<th> Address</th>
+<th> Date</th>
+<th> Weather</th>
+<th> Daily Music</th>
+</tr>
+
+<tr class="alt">
+<td> 浙江理工大学学生生活宿舍</td>
+<td> 2018-05-27</td>
+<td> 阴天</td>
+<td>
+<audio controls="controls" loop preload>
+<source src=" " type=audio/mpeg>
+</audio>
+</td>
+</tr>
+
+<tr>
+<th colspan="2"> Plan</th>
+<th colspan="2"> Finished</th>
+</tr>
+
+<tr>
+<th colspan="2"> 毕设相关文档填写完毕 </th>
+<th colspan="2"> 100% </th>
+</tr>
+
+<tr>
+<th colspan="2"> 嵌入式开发流程整理完 </th>
+<th colspan="2"> 100%  </th>
+</tr>
+
+<tr>
+<th colspan="2"> “嵌入式ARM每日习题汇总” 和“电源每日习题”添加</th>
+<th colspan="2"> 100% </th>
+</tr>
+
+<tr>
+<th colspan="2"> 硬件日常“单片机结构之复位电路” </th>
+<th colspan="2"> 0% </th>
+</tr>
+
+<tr>
+<th colspan="2">软件日常“TCP/IP” </th>
+<th colspan="2"> 0% </th>
+</tr>
+
+<tr>
+<th colspan="4"> 备注:  晚上有点困，有点累</th>
+</tr>
+</table>
+
+<img src=" " alt=" " width="" height="">
+
+
+
+
+<table id="customers">
+<tr>
+<th> Address</th>
+<th> Date</th>
+<th> Weather</th>
+<th> Daily Music</th>
+</tr>
+
+<tr class="alt">
+<td> 浙江理工大学学生生活宿舍</td>
+<td> 2018-05-28</td>
+<td> 阴天</td>
+<td>
+<audio controls="controls" loop preload>
+<source src=" " type=audio/mpeg>
+</audio>
+</td>
+</tr>
+
+<tr>
+<th colspan="2"> Plan</th>
+<th colspan="2"> Finished</th>
+</tr>
+
+<tr>
+<th colspan="2"> 毕设相关文档整理并打印 </th>
+<th colspan="2"> 0% </th>
+</tr>
+
+<tr>
+<th colspan="2"> 硬件日常“复位电路” </th>
+<th colspan="2"> 0%  </th>
+</tr>
+
+
+<tr>
+<th colspan="2">软件日常“TCP/IP” </th>
+<th colspan="2"> 0% </th>
+</tr>
+
+<tr>
+<th colspan="2"> “嵌入式ARM每日习题汇总” 和“电源每日习题”学习</th>
+<th colspan="2"> 0% </th>
+</tr>
+
+
+<tr>
+<th colspan="4"> 备注:  </th>
+</tr>
+</table>
+
+<img src=" " alt=" " width="" height="">
+
+
+
+
+
+<table id="customers">
+<tr>
+<th> Address</th>
+<th> Date</th>
+<th> Weather</th>
+<th> Daily Music</th>
+</tr>
+
+<tr class="alt">
+<td> 浙江理工大学学生生活宿舍</td>
+<td> 2018-06-09</td>
+<td> 阴天</td>
+<td>
+<audio controls="controls" loop preload>
+<source src=" "  type=audio/mpeg>
+</audio>
+</td>
+</tr>
+
+<tr>
+<th colspan="2"> Plan</th>
+<th colspan="2"> Finished</th>
+</tr>
+
+<tr>
+<th colspan="2"> 安装MATLAB </th>
+<th colspan="2"> 0% </th>
+</tr>
+
+<tr>
+<th colspan="2"> 作业 </th>
+<th colspan="2"> 0%  </th>
+</tr>
+
+<tr>
+<th colspan="2"> 硬件日常学习“复位电路” 或 模电仿真 </th>
+<th colspan="2"> 0% </th>
+</tr>
+
+<tr>
+<th colspan="2"> 软件日常学习“tcp/ip” 或 C语言 </th>
+<th colspan="2"> 0% </th>
+</tr>
+
+<tr>
+<th colspan="2"> “嵌入式ARM每日习题汇总” 和“电源每日习题”学习</th>
+<th colspan="2"> 0% </th>
+</tr>
+
+<tr>
+<th colspan="4"> 备注:  </th>
+</tr>
+</table>
+
+<img src=" " alt=" " width="" height="">
