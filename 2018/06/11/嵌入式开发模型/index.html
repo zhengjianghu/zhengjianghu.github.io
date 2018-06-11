@@ -17,18 +17,18 @@
   
   <title>Iblog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Linux服务器管理之DNS服务器   Linux服务器管理之DNS服务器">
+  <meta name="description" content="嵌入式开发模型  关于嵌入式开发模型">
 <meta name="keywords" content="Linux 嵌入式 博客 分享 摄影 学习">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Iblog">
-<meta property="og:url" content="http://jianghublog.com/2018/04/27/【嵌入式软件】【Linux】Linux服务管理之DNS服务篇/index.html">
+<meta property="og:url" content="http://jianghublog.com/2018/06/11/嵌入式开发模型/index.html">
 <meta property="og:site_name" content="Iblog">
-<meta property="og:description" content="Linux服务器管理之DNS服务器   Linux服务器管理之DNS服务器">
+<meta property="og:description" content="嵌入式开发模型  关于嵌入式开发模型">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-05-14T03:47:21.291Z">
+<meta property="og:updated_time" content="2018-06-11T06:02:08.342Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Iblog">
-<meta name="twitter:description" content="Linux服务器管理之DNS服务器   Linux服务器管理之DNS服务器">
+<meta name="twitter:description" content="嵌入式开发模型  关于嵌入式开发模型">
   
   
     <link rel="icon" href="/css/images/favicon.ico">
@@ -69,42 +69,62 @@
     </nav>
 </header>
       <div id="main" class="wrapper">
-        <div id="primary" class="site-content"><div id="content" role="main"><article id="post-【嵌入式软件】【Linux】Linux服务管理之DNS服务篇" class="post-【嵌入式软件】【Linux】Linux服务管理之DNS服务篇 post type-post status-publish format-standard hentry">
+        <div id="primary" class="site-content"><div id="content" role="main"><article id="post-嵌入式开发模型" class="post-嵌入式开发模型 post type-post status-publish format-standard hentry">
     <!---->
 
       <header class="entry-header">
         
         <div class="comments-link">
             
-            <a href="javascript:void(0);" data-url="http://jianghublog.com/2018/04/27/【嵌入式软件】【Linux】Linux服务管理之DNS服务篇/" data-id="cji9x5tie000vpww9rp6burkw" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
+            <a href="javascript:void(0);" data-url="http://jianghublog.com/2018/06/11/嵌入式开发模型/" data-id="cji9x5tis0013pww9cfc7ucc9" class="leave-reply bdsharebuttonbox" data-cmd="more">Share</a>
         </div><!-- .comments-link -->
       </header><!-- .entry-header -->
 
     <div class="entry-content">
       
-        <!DOCTYPE html>
-<html lang="en" dir="ltr">
+        
 
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>Linux服务器管理之DNS服务器</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>嵌入式开发模型</title>
 </head>
-
-<h1>Linux服务器管理之DNS服务器</h1>
+<h3>关于嵌入式开发模型</h3>
 <a id="more"></a>
-
 <body>
+      <h1><font align="center"> 嵌入式系统开发模式</font></h1>
+      <cite>嵌入式系统开发可以分为两种模式：一种是面向硬件的开发模式，一种是面向软件的开发模式。</cite>
+      <h2>面向硬件</h2>
+     指在开发过程中直接面向底层硬件进行开发的模式，目标机上一般没有系统或者运行一些轻量级的嵌入式系统。开发者需要了解底层硬件的操作方式，并直接针对相关硬件
+     进行操作。 <br>
+     主要由以下特点：  <br>
+     （1）使用的处理器功能一般比较简单，绝大多数是8位机或者16位机的单片机。  <br>
+     （2）一般不带有操作系统或带有轻量级嵌入式系统（ucos等）  <br>
+     （3）不具有人机交互功能或人机交互功能较为简单  <br>
+     （4）一旦程序写入之后，系统功能就相对固定。  <br>
+
+     <h2>面向软件</h2>
+     当面向一个内部已经装好了操作系统的目标系统开发时，就可以使用面向软件的开发模式，也称为面向操作系统的开发模式。 <br>
+     嵌入式操作系统是一种支持嵌入式系统应用的操作系统软件，通常包括与硬件相关的底层驱动软件、系统内核、设备驱动接口、通信协议等。操作系统能够把硬件虚拟化，
+     使得开发人员能够 不用关心底层硬件，从繁忙的驱动程序移植和维护中解脱出来；能够提供库函数、标准设备驱动程序与工具集等。因此面向软件的开发模式就可以使开
+     发人员不用关心底层硬件，只需关心操作系统所提供的接口和库函数即可实现需要的功能。 <br>
+
+     <h2>两种模式的区别与联系</h2>
+     任何一个嵌入式系统都是软件和硬件协同的结果。两种开发模式的选择需要根据具体应用而定，面向硬件的开发模式适用于任务简单、功能单一的应用中，对处理器等硬件
+     的需求也较低。当 需执行较多的任务，尤其需要复杂的人机交互时，使用面向软件的开发模式更为方便。
 
 </body>
-
 </html>
       
     </div><!-- .entry-content -->
 
     <footer class="entry-meta">
-    <a href="/2018/04/27/【嵌入式软件】【Linux】Linux服务管理之DNS服务篇/">
-    <time datetime="2018-04-27T08:49:28.739Z" class="entry-date">
-        2018-04-27
+    <a href="/2018/06/11/嵌入式开发模型/">
+    <time datetime="2018-06-11T06:02:08.342Z" class="entry-date">
+        2018-06-11
     </time>
 </a>
     
@@ -117,10 +137,10 @@
 <nav class="nav-single">
     <h3 class="assistive-text">文章导航</h3>
     
-        <span class="nav-previous"><a href="/2018/04/27/【嵌入式软件】【Linux】Linux服务管理之Mail服务篇/" rel="prev"><span class="meta-nav">←</span> (no title)</a></span>
+        <span class="nav-previous"><a href="/2018/06/11/嵌入式开发流程/" rel="prev"><span class="meta-nav">←</span> (no title)</a></span>
     
     
-        <span class="nav-next"><a href="/2018/04/26/【嵌入式软件】【Linux】Linux下各文件目录详解/" rel="next">(no title) <span class="meta-nav">→</span></a></span>
+        <span class="nav-next"><a href="/2018/05/25/【嵌入式软件】【Linux】Linux设置程序开机自动运行/" rel="next">(no title) <span class="meta-nav">→</span></a></span>
     
 </nav><!-- .nav-single -->
 
